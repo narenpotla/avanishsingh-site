@@ -1,0 +1,132 @@
+{
+  "_source": "avanishsinghvisen.com (home, about, awards, achievements) — pulled Sept 2026",
+  "_flags": [
+    "EXPERIENCE CONFLICT: site says 21 years, 18 years and 16+ years in different places. Career starts with a 2003 diploma, so '20+ years' is used below. Confirm with client.",
+    "'YOUNGEST CEO' is in his page title but can't be verified. Kept out of the hero for now. Ask the client whether to use it.",
+    "TESTIMONIALS: the same quotes appear under different names on different pages (e.g. 'Abhi Kapoor, New Delhi' vs 'Abhi Kapoor, Mumbai'). They look like placeholders. Excluded; ask for real ones.",
+    "HERO QUOTE on his site ('Management is doing things right...') is Peter Drucker's, not his. Using his own mantra 'Speed and Quality' instead.",
+    "IBM and Mahindra are mentioned in his bio but have no dates. Left out of the timeline until confirmed.",
+    "Need from client: high-res portrait for the hero, and a clean signature scan (sign.webp on his site is usable for tracing but low-res)."
+  ],
+
+  "identity": {
+    "name": "Avanish Singh Visen",
+    "honorific": "Mr.",
+    "title": "Director & CEO",
+    "organisation": "DCJ Group",
+    "groupCompanies": ["APPL (Ajay Poly Ltd)", "Encraft India Pvt. Ltd.", "Enzocraft"],
+    "tagline": "Speed and Quality",
+    "positioning": "Building India's manufacturing future, one decision at a time.",
+    "location": "New Delhi, India",
+    "credentialsLine": "MBA, Supply Chain Management · Diploma, Mechanical Engineering"
+  },
+
+  "stats": [
+    { "value": 20, "suffix": "+", "label": "Years in industry" },
+    { "value": 3, "suffix": "", "label": "Group companies led" },
+    { "value": 5, "suffix": "", "label": "Industries" },
+    { "value": 30, "suffix": "+", "label": "National & international awards" }
+  ],
+
+  "about": {
+    "paragraphs": [
+      "Avanish Singh Visen is the Director and CEO of DCJ Group, which spans APPL, Encraft and Enzocraft. He has spent over two decades across automotive, IT, home appliances, polymer and fenestration, with roles at Lenovo, Videocon and Mahindra before joining the group.",
+      "He built his career in supply chain and sourcing, and rose from SCM Head to CEO. Under him, Encraft became one of India's most awarded uPVC door and window brands, and the group grew on one rule: move fast, and never compromise on quality."
+    ],
+    "pullQuote": "Speed and quality — that is the whole mantra.",
+    "values": ["Trust", "Loyalty", "Transparency", "Heart-to-heart relationships"],
+    "signatureAsset": "https://avanishsinghvisen.com/assets/images/sign.webp"
+  },
+
+  "expertise": [
+    { "title": "Supply Chain Leadership", "detail": "End-to-end SCM, sourcing strategy and vendor development" },
+    { "title": "Procurement & Negotiation", "detail": "Competitive quotations, contract negotiation and closures" },
+    { "title": "Import & Export (EXIM)", "detail": "Foreign negotiations, export documentation and delivery" },
+    { "title": "Process Re-engineering", "detail": "Defect management and operational excellence" },
+    { "title": "uPVC Fenestration", "detail": "A decade building Encraft's doors and windows systems" },
+    { "title": "Growth & Product Launches", "detail": "Taking new brands and products to market at speed" }
+  ],
+
+  "journey": [
+    { "period": "Jun 2020 — Present", "role": "Director & CEO", "org": "DCJ Group", "place": "New Delhi", "highlight": true },
+    { "period": "Aug 2018 — Jun 2020", "role": "CEO", "org": "Encraft India Pvt. Ltd.", "place": "New Delhi" },
+    { "period": "Jun 2010 — Jul 2018", "role": "SCM Head", "org": "DCJ Group (Ajay Poly, Encraft, Ajay Industrial Polymers)", "place": "New Delhi" },
+    { "period": "Feb 2010 — May 2010", "role": "Sr. Manager, Purchase", "org": "Seaga India Pvt. Ltd.", "place": "Bahadurgarh" },
+    { "period": "Oct 2008 — Jan 2010", "role": "Asst. Manager, Sourcing", "org": "Videocon Consumer Durables", "place": "Kashipur" },
+    { "period": "Mar 2007 — Aug 2008", "role": "Team Lead, Sourcing", "org": "Lenovo Group Ltd.", "place": "Puducherry" }
+  ],
+
+  "education": [
+    { "period": "2010 — 2012", "degree": "MBA, Logistics, Materials & Supply Chain Management", "institution": "EIILM University" },
+    { "period": "2000 — 2003", "degree": "Diploma, Mechanical Engineering", "institution": "IERT Allahabad" }
+  ],
+
+  "recognition": {
+    "personal": [
+      { "year": "2025", "title": "Atal Youth Icon — Young World Entrepreneur Atal Icon Award", "note": "National Atal Award Ceremony, Prime Minister Museum; delivered keynote on Make in India" },
+      { "year": "2024", "title": "Atal Udyog Ratna Award" },
+      { "year": "2024", "title": "Global 2000 Inspirational Leaders" },
+      { "year": "2024", "title": "IDEA Excellence Award" },
+      { "year": "2022", "title": "India's Most Trusted CEO", "note": "WCRC Leaders" },
+      { "year": "2022", "title": "Inspirational Leaders of Asia", "note": "White Page International" },
+      { "year": "2021", "title": "Business Leader of the Year" },
+      { "year": "2020", "title": "The Most Admired Global Indians" },
+      { "year": "2020", "title": "Times SME Icons" },
+      { "year": "2020–21", "title": "Trusted CEO", "note": "WCRC Leaders" },
+      { "year": "2018–19", "title": "Fastest Growing Leader", "note": "Asia One Pride of the Nation, Mumbai" }
+    ],
+    "underHisLeadership": [
+      { "year": "2025", "title": "Best Quality Award — Ajay Poly Ltd", "note": "Presented by Haier" },
+      { "year": "2025", "title": "Silver Award, Best Raw Materials Support — APPL", "note": "LG Annual Business Partners Meet" },
+      { "year": "2024", "title": "Best uPVC Brand, Construction & Infrastructure — Encraft", "note": "4th consecutive year; presented by HUDCO Chairman" },
+      { "year": "2024", "title": "Best Use of Technology in Doors & Windows — Encraft", "note": "Presented by Uttarakhand CM" },
+      { "year": "2022", "title": "Best of Asia — Most Trusted Brand — Encraft", "note": "4th time in a row" },
+      { "year": "2021", "title": "India CSR Awards — Top 10 COVID-19 CSR Initiatives" },
+      { "year": "2020", "title": "SMB Star Icon — APPL", "note": "CII" }
+    ]
+  },
+
+  "contact": {
+    "phone": "+911140922210",
+    "phoneDisplay": "011 4092 2210",
+    "email": "info@avanishsinghvisen.com",
+    "address": "70, Okhla Industrial Estate, Phase III, New Delhi 110020",
+    "hours": "Mon–Fri, 9:00 am – 6:00 pm",
+    "website": "https://avanishsinghvisen.com",
+    "companySites": {
+      "encraft": "https://www.encraft.in/",
+      "appl": "https://www.applindia.co.in/",
+      "enzocraft": "https://enzocraft.in/"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/avanish-visen-b0bb325/",
+      "instagram": "https://www.instagram.com/avanishsinghvisen1/",
+      "facebook": "https://www.facebook.com/VisenAvanishSingh",
+      "youtube": "https://www.youtube.com/@AvanishSinghVisen"
+    }
+  },
+
+  "hero": {
+    "type": "static-image",
+    "image": "TODO: high-res portrait from client",
+    "fallbackImage": "https://avanishsinghvisen.com/assets/images/ceo-img1.webp",
+    "animations": ["badge-trace", "name-clip-reveal", "gold-underline-draw", "credentials-fade", "slow-ken-burns"]
+  },
+
+  "cta": {
+    "primary": "Connect with Avanish",
+    "secondary": "Save Contact",
+    "navCta": "Get in Touch"
+  },
+
+  "seo": {
+    "title": "Avanish Singh Visen — Director & CEO, DCJ Group",
+    "description": "Director & CEO of DCJ Group (APPL, Encraft, Enzocraft). 20+ years in manufacturing and supply chain leadership. New Delhi, India.",
+    "schemaType": "Person",
+    "worksFor": "DCJ Group"
+  },
+
+  "chatbot": {
+    "topics": ["who he is", "DCJ Group companies", "career journey", "awards", "expertise", "education", "business enquiries", "dealership/partnership", "contact & hours", "social links"]
+  }
+}

@@ -4,1479 +4,933 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Avanish Singh Visen | Director &amp; CEO, DCJ Group</title>
+  <!-- COPY meta.title / meta.description / og -->
+  <title>Avanish Singh Visen — Director &amp; CEO, DCJ Group</title>
   <meta name="description"
-    content="Avanish Singh Visen is Director &amp; CEO of DCJ Group, home to APPL, Encraft and Enzocraft. Leading with speed. Building with quality.">
+    content="Director &amp; CEO of DCJ Group (APPL, Encraft, Enzocraft), New Delhi. 20+ years in manufacturing and supply chain. Call or email him from this page.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#0E1A30">
   <meta name="format-detection" content="telephone=no">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Avanish Singh Visen | Director & CEO, DCJ Group">
-  <meta property="og:description" content="Director & CEO of DCJ Group: APPL, Encraft, Enzocraft.">
-  <!-- TODO: og:image and twitter:image need an absolute URL once the site domain is confirmed -->
-  <meta property="og:image" content="images/hero-soft.webp">
+  <meta property="og:title" content="Avanish Singh Visen — Director &amp; CEO, DCJ Group">
+  <meta property="og:description" content="Director &amp; CEO of DCJ Group: APPL, Encraft and Enzocraft. In industry since 2003. Call or email him from this page.">
+  <!-- TODO: og:url, og:image and twitter:image need absolute URLs once the page domain is known; swap to images/og.jpg (1200×630) when it exists -->
+  <meta property="og:image" content="images/hero-1024.webp">
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Avanish Singh Visen | Director & CEO, DCJ Group">
-  <meta name="twitter:description" content="Director & CEO of DCJ Group: APPL, Encraft, Enzocraft.">
-  <meta name="twitter:image" content="images/hero-soft.webp">
+  <meta name="twitter:title" content="Avanish Singh Visen — Director &amp; CEO, DCJ Group">
+  <meta name="twitter:description" content="Director &amp; CEO of DCJ Group: APPL, Encraft and Enzocraft. In industry since 2003. Call or email him from this page.">
+  <meta name="twitter:image" content="images/hero-1024.webp">
   <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1A30'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23C4973A' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
-  <link rel="preload" as="image" href="images/hero-soft.webp" type="image/webp" fetchpriority="high">
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1A30'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23C4973A' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+
+  <!-- Hero portrait: the only raster image on the page -->
+  <link rel="preload" as="image" type="image/webp" fetchpriority="high"
+    imagesrcset="images/hero-640.webp 640w, images/hero-1024.webp 1024w"
+    imagesizes="(min-width: 481px) 620px, 125vw">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:wght@400;600&display=swap"
-    rel="stylesheet">
-  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Avanish Singh Visen","jobTitle":"Director & CEO","worksFor":{"@type":"Organization","name":"DCJ Group"},"url":"https://avanishsinghvisen.com"}</script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600&display=swap">
+
+  <!-- No-JS failsafe: hidden pre-animation states only apply under html.js -->
+  <script>
+    (function (d, w) {
+      var h = d.documentElement; h.classList.add('js');
+      function bail() { if (!w.gsap || !w.ScrollTrigger) h.classList.remove('js'); }
+      d.addEventListener('DOMContentLoaded', function () { setTimeout(bail, 2500); });
+      /* if a CDN hangs, DOMContentLoaded waits on it: never keep content hidden past 4s */
+      setTimeout(function () { if (!w.__asvReady) h.classList.remove('js'); }, 4000);
+    })(document, window);
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Avanish Singh Visen","jobTitle":"Director & CEO","worksFor":{"@type":"Organization","name":"DCJ Group"},"url":"https://avanishsinghvisen.com","telephone":"+911140922210","email":"info@avanishsinghvisen.com","address":{"@type":"PostalAddress","streetAddress":"70, Okhla Industrial Estate, Phase III","addressLocality":"New Delhi","postalCode":"110020","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/in/avanish-visen-b0bb325/","https://www.instagram.com/avanishsinghvisen1/","https://www.facebook.com/VisenAvanishSingh","https://www.youtube.com/@AvanishSinghVisen"]}</script>
+
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box
-    }
-
-    * {
-      margin: 0;
-      padding: 0
-    }
-
+    /* ================================================================
+       TOKENS (design.md §4)
+       ================================================================ */
     :root {
       --navy: #0E1A30;
       --navy2: #07101F;
-      --navy-deep: #0A1322;
       --gold: #C4973A;
       --gold2: #E5C16A;
+      --gold-ink: #8A6A28;   /* gold as text on ivory (4.6:1); --gold itself is 2.5:1 there */
       --ivory: #FAF7F2;
-      --white: #fff;
-      --dark: #0E1A30;
-      --text: rgba(14, 26, 48, .75);
-      --text-soft: rgba(14, 26, 48, .62);
+      --ink-78: rgba(14, 26, 48, .78);
+      --ink-62: rgba(14, 26, 48, .62);
       --ivory-75: rgba(250, 247, 242, .75);
       --ivory-60: rgba(250, 247, 242, .6);
-      --display: 'Cormorant Garamond', serif;
-      --body: 'Nunito Sans', sans-serif;
-      --ease: cubic-bezier(.22, 1, .36, 1)
+      --hair-ivory: rgba(14, 26, 48, .12);   /* hairline on ivory */
+      --hair-navy: rgba(250, 247, 242, .12); /* hairline on navy */
+      --hair-ledger: rgba(196, 151, 58, .45);
+      --serif: 'Cormorant Garamond', 'Cormorant', Georgia, serif;
+      --sans: 'Nunito Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --expo: cubic-bezier(.16, 1, .3, 1);
+      --quad: cubic-bezier(.25, .46, .45, .94);
+      --g: 24px;        /* gutter */
+      --sec: 80px;      /* section padding */
+      --sig-w: 200px;   /* signature display width */
     }
 
-    html {
-      -webkit-text-size-adjust: 100%;
-      overflow-x: hidden;
-      background: var(--navy2)
+    @media (max-width: 374.98px) {
+      :root { --g: 20px; --sec: 72px; --sig-w: 184px; }
     }
 
+    @media (min-width: 481px) {
+      :root { --g: 32px; }
+    }
+
+    /* ================================================================
+       RESET + BASE
+       ================================================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; background: var(--navy2); }
     body {
-      width: min(100%, 480px);
-      margin: 0 auto;
-      overflow-x: hidden;
-      background: var(--ivory);
-      color: var(--dark);
-      font: 400 14px/1.7 var(--body);
+      background: var(--navy2);
+      color: var(--ivory);
+      font: 400 16px/1.6 var(--sans);
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      box-shadow: 0 0 90px rgba(0, 0, 0, .45)
+    }
+    img, svg { display: block; }
+    a { color: inherit; }
+    button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+    ul, ol { list-style: none; }
+
+    /* Lenis */
+    html.lenis, html.lenis body { height: auto; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    .lenis.lenis-stopped { overflow: hidden; }
+
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none
+    /* Page column: phone-first, centred at 480 on desktop */
+    .page { position: relative; max-width: 480px; margin: 0 auto; overflow-x: hidden; overflow-x: clip; }
+    @media (min-width: 481px) {
+      .page { border-left: 1px solid rgba(250, 247, 242, .06); border-right: 1px solid rgba(250, 247, 242, .06); }
     }
 
-    a,
-    button {
-      -webkit-tap-highlight-color: transparent
-    }
+    .navy { background: var(--navy); color: var(--ivory); }
+    .ivory { background: var(--ivory); color: var(--navy); }
+    .sec { padding: var(--sec) var(--g); }
 
-    button {
-      font: inherit;
-      color: inherit;
-      background: none;
-      border: 0;
-      cursor: pointer
-    }
+    /* ================================================================
+       TYPE (4 display + 3 text sizes)
+       ================================================================ */
+    .d-xl { font-family: var(--serif); font-weight: 500; font-size: clamp(52px, 15.4vw, 64px); line-height: .95; letter-spacing: -.015em; }
+    .d-l  { font-family: var(--serif); font-weight: 500; font-size: 40px; line-height: 1.05; letter-spacing: -.01em; }
+    .d-m  { font-family: var(--serif); font-weight: 500; font-size: 30px; line-height: 1.18; letter-spacing: -.01em; }
+    .d-s  { font-family: var(--serif); font-weight: 600; font-size: 22px; line-height: 1.25; }
+    .b-s  { font-size: 14px; line-height: 1.45; }
+    .caps { font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+    .d-xl, .d-l, .d-m, .d-s { font-variant-numeric: lining-nums; }
+    .num, .d-xl.num, .d-l.num, .d-m.num, .d-s.num { font-variant-numeric: lining-nums tabular-nums; }
+    h1, h2, h3 { font-weight: inherit; }
+    h2.d-m { text-wrap: balance; }
 
-    :focus-visible {
-      outline: 2px solid var(--gold2);
-      outline-offset: 3px
-    }
+    /* Line masks (built by the splitter, or pre-made in the hero) */
+    [data-r="lines"] { display: flow-root; }
+    .lns { display: block; }
+    .ln { display: block; overflow: hidden; margin: -.14em -.1em; padding: 0 .1em; }
+    .ln__i { display: block; padding: .14em 0; }
+
+    /* Pre-animation states. Only with JS; the failsafe removes .js */
+    .js [data-r],
+    .js .hero__img,
+    .js .sig { opacity: 0; }
+
+    /* Interaction states */
+    .press { transition: scale .12s var(--expo), background-color .12s linear; -webkit-tap-highlight-color: transparent; }
+    .press:active { scale: .98; }
+    .ivory .press:active { background-color: rgba(14, 26, 48, .04); }
+    .navy .press:active { background-color: rgba(250, 247, 242, .04); }
+    :focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+    .navy :focus-visible, .skip:focus-visible, .pill:focus-visible { outline-color: var(--gold2); }
+    [tabindex="-1"]:focus { outline: none; }
 
     .skip {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 99;
-      transform: translateY(-140%);
-      padding: 10px 12px;
-      border-radius: 8px;
-      background: var(--gold);
-      color: white;
-      font-weight: 600
+      position: absolute; left: 16px; top: -120px; z-index: 100;
+      display: inline-flex; align-items: center; min-height: 48px; padding: 0 16px;
+      border-radius: 14px; background: var(--ivory); color: var(--navy);
+      font-size: 14px; font-weight: 600; text-decoration: none;
     }
+    .skip:focus { top: 16px; }
 
-    .skip:focus {
-      transform: translateY(0)
-    }
+    .i16 { width: 16px; height: 16px; flex: none; }
 
-    .section {
+    /* ================================================================
+       1 · HERO (card face)
+       ================================================================ */
+    .hero {
       position: relative;
-      padding: 96px 24px
-    }
-
-    .label {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: .2em;
-      text-transform: uppercase
-    }
-
-    .label:before {
-      content: '';
-      width: 28px;
-      height: 1px;
-      background: currentColor
-    }
-
-    .heading {
-      font: 600 clamp(30px, 8.6vw, 36px)/1.1 var(--display);
-      color: var(--navy);
-      letter-spacing: -.01em
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 50px;
-      padding: 0 18px;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      font: 600 13px/1 var(--body);
-      letter-spacing: .02em;
-      cursor: pointer;
-      transition: transform .22s var(--ease)
-    }
-
-    .btn:active {
-      transform: scale(.97)
-    }
-
-    .btn--primary {
-      background: linear-gradient(135deg, #D8AD4A, var(--gold));
-      color: white;
-      box-shadow: 0 14px 30px rgba(196, 151, 58, .28)
-    }
-
-    .btn--ghost {
-      background: rgba(14, 26, 48, .35);
-      border-color: rgba(250, 247, 242, .45);
-      color: var(--ivory);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px)
-    }
-
-    .btn svg,
-    .contact__btn svg {
-      width: 20px;
-      height: 20px;
-      flex: none;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round
-    }
-
-    /* -- 1 · HERO (navy) ------------------------------------- */
-    #hero {
-      position: relative;
-      width: 100%;
-      height: 100svh;
-      min-height: 600px;
+      min-height: 640px; min-height: max(640px, 100vh); min-height: max(640px, 100svh);
+      display: flex; flex-direction: column; justify-content: flex-end;
       overflow: hidden;
-      background: var(--navy)
+      padding: 0 var(--g) max(32px, calc(env(safe-area-inset-bottom) + 20px));
     }
-
-    /* Soft-halo portrait (images/hero-soft.webp, edges pre-faded to --navy).
-       Sized off viewport height so it bleeds past both sides; top is set so the
-       hairline (17% down the image) sits just under the title. */
-    .hero__photo {
-      position: absolute;
-      width: 70svh;
-      height: 105svh;
-      max-width: none;
-      top: calc(196px - 17.85svh);
-      left: calc(50% - 33svh);
-      transform-origin: 40% 25%;
-      z-index: 1
-    }
-
-    .hero__grad {
-      position: absolute;
-      left: 0;
-      right: 0;
+    /* Portrait geometry. Tall screens (≥ ~770px): exactly §5.1 (86svh tall, top −4svh).
+       Shorter screens: the portrait scales down so the crossed arms (73% of the image)
+       always end above the ~330px text block, instead of sliding under the name. */
+    .hero { --hh: max(640px, 100vh); }
+    @supports (height: 100svh) { .hero { --hh: max(640px, 100svh); } }
+    .hero__portrait {
+      --ph: min(calc(var(--hh) * .86), calc((var(--hh) - 360px) / .63));
+      position: absolute; left: 50%;
+      top: calc(var(--hh) * -.04 - (var(--hh) * .86 - var(--ph)) * .15);
+      height: var(--ph);
+      aspect-ratio: 2 / 3;
+      transform: translateX(-50%); /* body centred; the head sits naturally just left of centre */
+      -webkit-mask-image: linear-gradient(#000 64%, transparent 96%), linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+      -webkit-mask-composite: source-in;
+      mask-image: linear-gradient(#000 64%, transparent 96%), linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+      mask-composite: intersect;
       pointer-events: none;
-      z-index: 2
     }
+    .hero__img { width: 100%; height: 100%; object-fit: cover; }
+    .hero__text { position: relative; z-index: 1; }
+    .hero__title { margin-top: 14px; color: var(--gold); font-weight: 500; }
+    .hero__cos { margin-top: 6px; color: var(--ivory-60); }
+    .hero__rule { display: block; height: 1px; margin-top: 28px; background: var(--hair-ledger); }
+    .ledger { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; }
+    .ledger__cell { display: flex; flex-direction: column; min-height: 56px; text-decoration: none; color: var(--ivory); }
+    .ledger__num { display: block; }
+    .ledger__num .plus { color: var(--gold); }
+    .ledger__label { display: flex; align-items: center; gap: 6px; margin-top: 2px; color: var(--ivory-60); white-space: nowrap; }
+    .ledger__label svg { width: 10px; height: 10px; color: var(--gold); flex: none; }
 
-    .hero__grad--top {
-      top: 0;
-      height: 26%;
-      background: linear-gradient(to bottom, var(--navy) 0%, var(--navy) 45%, rgba(14, 26, 48, 0) 100%)
+    /* ================================================================
+       2 · INTRO (the letter opens)
+       ================================================================ */
+    .about__lede { color: var(--navy); }
+    .about__body p { margin-top: 16px; color: var(--ink-78); }
+    .about__lede + .about__body p:first-child { margin-top: 20px; }
+    .about__body em { font-style: italic; color: var(--navy); }
+    .about q { quotes: '\201C' '\201D'; color: var(--navy); }
+    .about q::before { content: open-quote; }
+    .about q::after { content: close-quote; }
+
+    /* The four pillars: engraved words between hairlines */
+    .pillars { margin: 40px 0 0; padding: 20px 0 22px; border-top: 1px solid var(--hair-ivory); border-bottom: 1px solid var(--hair-ivory); }
+    .pillars figcaption { color: var(--ink-62); }
+    .pillars ul { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin-top: 14px; }
+    .pillars li { font: 500 22px/1.2 var(--serif); color: var(--navy); }
+    .pillars li:last-child { grid-column: 1 / -1; }
+
+    .about__kicker { display: flex; align-items: center; gap: 12px; margin-top: 48px; color: var(--gold-ink); }
+    .about__kicker::after { content: ''; flex: 1; height: 1px; background: rgba(196, 151, 58, .45); }
+
+    .about__quote { margin-top: 48px; padding-left: 18px; border-left: 2px solid var(--gold); }
+    .about__quote p { font-style: italic; color: var(--navy); }
+
+    .rule { display: block; height: 1px; background: var(--hair-ivory); }
+    .navy .rule { background: var(--hair-navy); }
+
+    /* ================================================================
+       3 · HONOURS
+       ================================================================ */
+    .honours h2 { color: var(--navy); }
+    .featured { position: relative; isolation: isolate; margin-top: 32px; }
+    .featured__glow {
+      position: absolute; z-index: -1; pointer-events: none;
+      top: -72px; bottom: -72px; left: calc(-1 * var(--g)); right: calc(-1 * var(--g));
+      background: radial-gradient(closest-side, rgba(196, 151, 58, .14), rgba(196, 151, 58, 0));
     }
-
-    .hero__grad--bottom {
-      bottom: 0;
-      height: 34%;
-      background: linear-gradient(to top, rgba(14, 26, 48, .9) 0%, rgba(14, 26, 48, .55) 45%, rgba(14, 26, 48, 0) 100%)
+    .featured__year { color: var(--gold-ink); }
+    .featured__name { margin-top: 4px; color: var(--navy); }
+    .featured__ctx { margin-top: 12px; color: var(--ink-78); }
+    .hlist { margin-top: 40px; }
+    .hrow { display: grid; grid-template-columns: 56px 1fr; padding: 18px 0; }
+    .hrow__year { color: var(--gold-ink); }
+    .hrow__name { color: var(--navy); }
+    .hrow__by { margin-top: 4px; color: var(--ink-62); }
+    .more {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      width: 100%; min-height: 56px; text-align: left; font-weight: 600; color: var(--navy);
     }
-
-    .hero__text {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: max(32px, env(safe-area-inset-top) + 20px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 24px;
-      z-index: 10
+    .more__x { position: relative; width: 12px; height: 12px; flex: none; }
+    .more__x::before, .more__x::after { content: ''; position: absolute; background: var(--gold); }
+    .more__x::before { left: 0; right: 0; top: 5.5px; height: 1px; }
+    .more__x::after { top: 0; bottom: 0; left: 5.5px; width: 1px; }
+    html:not(.js) .more[aria-expanded="true"] .more__x { transform: rotate(45deg); }
+    .full { overflow: hidden; }
+    .full__inner { padding-bottom: 32px; }
+    .full__group { padding-top: 24px; }
+    .full__year { color: var(--gold-ink); }
+    .full__item { margin-top: 8px; }
+    .full__title { color: var(--navy); }
+    .full__by { color: var(--ink-62); }
+    .full__link {
+      display: inline-flex; align-items: center; gap: 8px; min-height: 48px; margin-top: 24px;
+      color: var(--navy); text-decoration: underline; text-decoration-color: rgba(196, 151, 58, .7);
+      text-decoration-thickness: 1px; text-underline-offset: 4px;
     }
+    .full__link svg { color: var(--gold-ink); }
 
-    .hero__name {
-      font: 600 52px/1 var(--display);
-      color: #fff;
-      letter-spacing: -.01em
-    }
-
-    .hero__line {
-      display: block;
-      overflow: hidden;
-      padding-bottom: .1em;
-      margin-bottom: -.1em
-    }
-
-    .hero__line span {
-      display: block
-    }
-
-    .hero__underline {
-      width: 60px;
-      height: 2px;
-      margin: 12px auto 10px;
-      background: var(--gold);
-      border-radius: 1px;
-      transform-origin: left center
-    }
-
-    .hero__title {
-      font: 600 13px/1.4 var(--body);
-      color: var(--gold);
-      letter-spacing: .12em
-    }
-
-    .hero__bottom {
-      position: absolute;
-      left: 14px;
-      right: 14px;
-      bottom: max(16px, env(safe-area-inset-bottom) + 10px);
-      z-index: 10;
-      display: grid;
-      gap: 12px
-    }
-
-    .hero__actions {
-      display: flex;
-      gap: 10px
-    }
-
-    .hero__actions .btn {
-      flex: 1;
-      min-height: 48px;
-      padding: 0 10px
-    }
-
-    /* Glass stats strip */
-    .hero__stats {
-      position: relative;
-      display: flex;
-      padding: 12px 2px;
-      list-style: none;
-      background: rgba(255, 255, 255, .06);
-      border: 1px solid rgba(255, 255, 255, .14);
-      border-radius: 16px;
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, .35);
-      overflow: hidden
-    }
-
-    .hero__stats::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 10%;
-      right: 10%;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255, 255, 255, .25) 50%, transparent)
-    }
-
-    .stat {
-      flex: 1;
-      min-width: 0;
-      padding: 0 3px;
-      text-align: center
-    }
-
-    .stat+.stat {
-      border-left: .5px solid rgba(255, 255, 255, .14)
-    }
-
-    .stat__num {
-      display: inline-flex;
-      align-items: flex-start;
-      justify-content: center;
-      font: 600 26px/1.1 var(--display);
-      font-variant-numeric: lining-nums tabular-nums;
-      color: #fff
-    }
-
-    .digit {
-      display: inline-block;
-      height: 1.1em;
-      overflow: hidden
-    }
-
-    .reel {
-      display: flex;
-      flex-direction: column
-    }
-
-    .reel i {
-      display: block;
-      height: 1.1em;
-      font-style: normal
-    }
-
-    .stat__suffix {
-      color: var(--gold2)
-    }
-
-    .stat__lbl {
-      display: block;
-      margin-top: 3px;
-      font-size: 11px;
-      line-height: 1.3;
-      color: var(--ivory-75)
-    }
-
-    /* -- 2 · ABOUT (ivory) ----------------------------------- */
-    #about {
-      background: var(--ivory);
-      padding-bottom: 80px
-    }
-
-    .about__body {
-      margin-top: 28px
-    }
-
-    .about__body p {
-      font-size: 15px;
-      line-height: 1.8;
-      color: var(--text)
-    }
-
-    .about__body p+p {
-      margin-top: 16px
-    }
-
-    .signature {
-      display: block;
-      width: 220px;
-      height: auto;
-      margin: 10px 0 0 auto;
-      mix-blend-mode: multiply
-    }
-
-    .mantra {
-      margin-top: 56px
-    }
-
-    .mantra__word {
-      display: block;
-      font: italic 500 64px/1 var(--display);
-      color: var(--navy);
-      letter-spacing: -.01em
-    }
-
-    .mantra__cap {
-      display: block;
-      margin-top: 16px;
-      color: var(--gold);
-      font-size: 10px;
-      font-style: normal;
-      font-weight: 600;
-      letter-spacing: .2em;
-      text-transform: uppercase
-    }
-
-    .values {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 6px 12px;
-      margin-top: 40px;
-      padding: 16px 0;
-      list-style: none;
-      border-top: 1px solid rgba(196, 151, 58, .35);
-      border-bottom: 1px solid rgba(196, 151, 58, .35);
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--navy);
-      white-space: nowrap
-    }
-
-    /* -- 3 · JOURNEY (white) --------------------------------- */
-    #journey {
-      background: var(--white)
-    }
-
-    .legend {
-      display: flex;
-      gap: 16px;
-      margin: 20px 0 44px;
-      font-size: 11px;
-      color: var(--text-soft)
-    }
-
+    /* ================================================================
+       4 · RECORD (the thread)
+       ================================================================ */
+    .journey h2 { color: var(--ivory); }
+    .legend { display: flex; gap: 16px; margin: 16px 0 44px; color: var(--ivory-60); }
     .legend i {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-right: 6px;
-      border-radius: 50%;
-      border: 1.5px solid var(--gold);
-      background: var(--ivory);
-      vertical-align: -1px
+      display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: -1px;
+      border-radius: 50%; border: 1.5px solid var(--gold); background: var(--navy);
     }
+    .legend i.on { background: var(--ivory); border-color: var(--ivory); }
 
-    .legend i.on {
-      background: var(--navy);
-      border-color: var(--navy)
+    .timeline { position: relative; display: grid; gap: 28px; }
+    .timeline::before {                                   /* the gold spine */
+      content: ''; position: absolute; left: calc(50% - 1px); top: 32px; bottom: 32px; width: 2px; background: var(--gold);
     }
-
-    .timeline {
-      position: relative;
-      list-style: none;
-      display: grid;
-      gap: 30px
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: calc(50% - 1px);
-      top: 24px;
-      bottom: 32px;
-      width: 2px;
-      background: var(--gold)
-    }
-
-    .stop {
-      --s: 48px;
-      position: relative;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center
-    }
-
-    .stop__circle,
-    .stop__text {
-      grid-row: 1
-    }
-
-    .stop--left .stop__circle {
-      grid-column: 1;
-      justify-self: end;
-      margin-right: 22px
-    }
-
-    .stop--left .stop__text {
-      grid-column: 2;
-      padding-left: 18px
-    }
-
-    .stop--right .stop__circle {
-      grid-column: 2;
-      justify-self: start;
-      margin-left: 22px
-    }
-
-    .stop--right .stop__text {
-      grid-column: 1;
-      padding-right: 18px;
-      text-align: right
-    }
-
-    .stop__dot {
-      position: absolute;
-      left: calc(50% - 4px);
-      top: calc(50% - 4px);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--gold)
-    }
-
-    .stop__conn {
-      position: absolute;
-      top: calc(50% - 1px);
-      height: 2px;
-      width: 22px;
-      background: var(--gold)
-    }
-
-    .stop--left .stop__conn,
-    .stop__conn--l {
-      right: 50%
-    }
-
-    .stop--right .stop__conn,
-    .stop__conn--r {
-      left: 50%
-    }
-
-    /* Parallel tracks: SCM Head (career) beside MBA (education) */
-    .stop--pair {
-      align-items: start
-    }
-
-    .stop--pair .stop__dot {
-      top: calc(var(--s) / 2 - 4px)
-    }
-
-    .stop--pair .stop__conn {
-      top: calc(var(--s) / 2 - 1px)
-    }
-
-    .track {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      min-width: 0
-    }
-
-    .track--l {
-      grid-column: 1;
-      align-items: flex-end;
-      text-align: right;
-      padding-right: 22px
-    }
-
-    .track--r {
-      grid-column: 2;
-      align-items: flex-start;
-      padding-left: 22px
-    }
-
+    .stop { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
+    .stop__circle, .stop__text { grid-row: 1; }
+    .stop--left .stop__circle { grid-column: 1; justify-self: end; margin-right: 22px; }
+    .stop--left .stop__text { grid-column: 2; padding-left: 18px; }
+    .stop--right .stop__circle { grid-column: 2; justify-self: start; margin-left: 22px; }
+    .stop--right .stop__text { grid-column: 1; padding-right: 18px; text-align: right; }
+    .stop__dot { position: absolute; left: calc(50% - 4px); top: calc(50% - 4px); width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
+    .stop__conn { position: absolute; top: calc(50% - 1px); width: 22px; height: 2px; background: var(--gold); }
+    .stop--left .stop__conn { right: 50%; }
+    .stop--right .stop__conn { left: 50%; }
     .stop__circle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: var(--s);
-      height: var(--s);
-      border-radius: 50%;
-      font-family: var(--display);
-      font-weight: 600;
-      line-height: 1;
-      transition: transform .22s var(--ease)
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      width: 64px; height: 64px; border-radius: 50%;
+      font-family: var(--serif); font-weight: 600; line-height: 1; font-variant-numeric: lining-nums;
     }
+    .stop__circle .yr { font-size: 17px; }
+    .stop__circle .yr2 { margin-top: 2px; font-size: 12px; }
+    .is-edu .stop__circle { background: var(--navy); border: 1.5px solid var(--gold); color: var(--ivory); }
+    .is-career .stop__circle { background: var(--ivory); color: var(--navy); }
+    .is-now .stop__circle { box-shadow: 0 0 0 3px var(--navy), 0 0 0 5px var(--gold); }
+    .stop__type { color: var(--gold); }
+    .stop__role { margin: 3px 0 3px; font: 600 18px/1.2 var(--serif); color: var(--ivory); }
+    .stop__org { font-size: 12px; line-height: 1.4; color: var(--ivory-60); }
 
-    .stop__circle:active {
-      transform: scale(.94)
-    }
+    .journey__close { margin-top: 52px; text-align: center; }
+    .journey__close::before { content: ''; display: block; width: 40px; height: 1px; margin: 0 auto 16px; background: var(--gold); }
+    .journey__line { font: italic 500 26px/1.2 var(--serif); color: var(--ivory); }
 
-    .stop__circle .yr {
-      font-size: calc(var(--s) * .3)
-    }
-
-    .stop__circle .yr2 {
-      margin-top: 1px;
-      font-size: calc(var(--s) * .22)
-    }
-
-    .is-edu .stop__circle {
-      background: var(--ivory);
-      border: 1.5px solid var(--gold);
-      color: var(--navy)
-    }
-
-    .is-career .stop__circle {
-      background: var(--navy);
-      color: #fff
-    }
-
-    .is-current .stop__circle {
-      box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--gold)
-    }
-
-    .stop__type {
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: .2em;
-      text-transform: uppercase
-    }
-
-    .stop__role {
-      font: 700 20px/1.15 var(--display);
-      color: var(--navy);
-      margin: 3px 0 4px
-    }
-
-    .stop__org {
-      font-size: 11px;
-      line-height: 1.4;
-      color: var(--text-soft)
-    }
-
-    .journey__close {
-      margin-top: 56px;
-      text-align: center
-    }
-
-    .journey__close::before {
-      content: '';
-      display: block;
-      width: 40px;
-      height: 1px;
-      margin: 0 auto 20px;
-      background: var(--gold)
-    }
-
-    .journey__close p {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 12px
-    }
-
-    .journey__num {
-      font: 600 72px/1 var(--display);
-      color: var(--gold);
-      font-variant-numeric: lining-nums
-    }
-
-    .journey__words {
-      font: italic 500 26px/1.2 var(--display);
-      color: var(--navy)
-    }
-
-    /* -- Expand card (shared: Journey + Honours) ------------- */
+    /* Tap-to-expand card (Journey stops) */
     .modal {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(14, 26, 48, .3);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity .3s var(--ease), visibility 0s .3s
+      position: fixed; inset: 0; z-index: 90; display: flex; align-items: center; justify-content: center;
+      background: rgba(14, 26, 48, .3); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+      opacity: 0; visibility: hidden; transition: opacity .3s var(--expo), visibility 0s .3s;
     }
-
-    .modal.is-open {
-      opacity: 1;
-      visibility: visible;
-      transition: opacity .3s var(--ease), visibility 0s
-    }
-
+    .modal.is-open { opacity: 1; visibility: visible; transition: opacity .3s var(--expo), visibility 0s; }
     .modal__card {
-      position: relative;
-      width: min(88vw, 420px);
-      max-height: 86svh;
-      overflow-y: auto;
-      padding: 32px 24px 28px;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 24px 64px rgba(14, 26, 48, .35);
-      transform: translateY(24px) scale(.96);
-      transition: transform .3s var(--ease)
+      position: relative; width: min(88vw, 420px); max-height: 86svh; overflow-y: auto;
+      padding: 32px 24px 28px; border-radius: 20px; background: #fff; color: var(--navy);
+      box-shadow: 0 24px 64px rgba(14, 26, 48, .35); transform: translateY(24px) scale(.96); transition: transform .3s var(--expo);
     }
-
-    .modal.is-open .modal__card {
-      transform: none
-    }
-
+    .modal.is-open .modal__card { transform: none; }
     .modal__close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      z-index: 2;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      font-size: 18px;
-      color: var(--navy);
-      background: rgba(255, 255, 255, .92);
-      box-shadow: 0 2px 10px rgba(14, 26, 48, .25)
+      position: absolute; top: 8px; right: 8px; display: grid; place-items: center;
+      width: 48px; height: 48px; border-radius: 50%; color: var(--navy);
+    }
+    .modal__close svg { width: 18px; height: 18px; }
+    .modal__range { font: 600 30px/1.1 var(--serif); color: var(--gold-ink); font-variant-numeric: lining-nums; }
+    .modal__title { margin-top: 6px; padding-right: 32px; font: 600 24px/1.15 var(--serif); }
+    .modal__meta { margin-top: 8px; font-size: 14px; color: var(--ink-62); }
+    .modal__detail { margin-top: 14px; font-size: 15px; line-height: 1.6; color: var(--ink-78); }
+    .modal__card > [hidden] { display: none; }
+
+    .sig { width: var(--sig-w); margin: 36px 0 0; }
+    .sig svg { width: 100%; height: auto; overflow: visible; }
+    .sig__ink { fill: var(--navy); }
+    .sig--wipe {
+      -webkit-mask-image: linear-gradient(90deg, #000 45%, transparent 55%);
+      mask-image: linear-gradient(90deg, #000 45%, transparent 55%);
+      -webkit-mask-size: 220% 100%; mask-size: 220% 100%;
+      -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+      -webkit-mask-position: var(--wipe, 100%) 0; mask-position: var(--wipe, 100%) 0;
     }
 
-    .modal__photo {
-      margin: -32px -24px 22px;
-      aspect-ratio: 4/3;
-      overflow: hidden;
-      background: linear-gradient(155deg, #1C2F52, var(--navy))
+    /* ================================================================
+       5 · CONTACT + FOOTER (navy): monogram, invitation, email card, socials
+       ================================================================ */
+    .contact { position: relative; overflow: hidden; isolation: isolate; padding: 72px var(--g) max(104px, calc(env(safe-area-inset-bottom) + 96px)); } /* bottom room for the floating assistant button */
+    .foot__logo { width: 76px; height: auto; }
+    .foot__label { display: flex; align-items: center; gap: 14px; margin-top: 40px; color: var(--gold2); font-size: 12px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; }
+    .foot__label::before { content: ''; width: 44px; height: 1px; background: var(--gold); }
+    .foot__h { margin-top: 18px; font: 500 clamp(34px, 10.4vw, 44px)/1.08 var(--serif); letter-spacing: -.01em; color: var(--ivory); }
+    .foot__h span { display: block; color: var(--gold2); }
+    .foot__lede { margin-top: 18px; max-width: 30ch; color: var(--ivory-60); }
+
+    .mailcard {
+      position: relative; display: flex; align-items: center; gap: 12px; margin-top: 32px; padding: 16px 14px 16px 12px;
+      border: 1px solid rgba(196, 151, 58, .6); border-radius: 14px; color: var(--ivory); text-decoration: none;
+      background: linear-gradient(135deg, rgba(196, 151, 58, .06), rgba(196, 151, 58, 0) 60%);
+    }
+    .mailcard:focus-visible { outline-offset: 3px; }
+    .mailcard__ic {
+      display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid rgba(196, 151, 58, .7); color: var(--gold2);
+      box-shadow: 0 0 18px rgba(196, 151, 58, .22), inset 0 0 12px rgba(196, 151, 58, .12);
+    }
+    .mailcard__ic svg { width: 22px; height: 22px; }
+    .mailcard__txt { flex: 1; min-width: 0; padding-left: 12px; border-left: 1px solid rgba(196, 151, 58, .45); }
+    .mailcard__k { display: block; color: var(--ivory-75); font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
+    .mailcard__v { display: block; margin-top: 4px; font: 500 min(20px, calc((100vw - 190px) / 11.3))/1.2 var(--serif); white-space: nowrap; } /* sized so the address always fits on one line */
+    .mailcard > svg { width: 20px; height: 20px; flex: none; color: var(--gold2); }
+
+    .foot__rule { display: block; height: 1px; margin-top: 36px; background: var(--hair-navy); }
+    .socials { display: flex; gap: 12px; margin-top: 32px; }
+    .socials a {
+      display: grid; place-items: center; width: 52px; height: 52px; border-radius: 999px;
+      border: 1px solid rgba(196, 151, 58, .7); color: var(--gold2);
+    }
+    .socials svg { width: 21px; height: 21px; }
+    .copy { margin-top: 56px; color: var(--ivory-75); font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; }
+    .copy2 { margin-top: 8px; color: var(--ivory-60); font-size: 12px; letter-spacing: .24em; text-transform: uppercase; }
+
+    /* Oversized monogram watermark, bottom right: dark facets with light catching the edges */
+    .foot__mark { position: absolute; z-index: -1; right: -26%; bottom: -8%; width: 88%; height: auto; pointer-events: none; }
+    .foot__glow {
+      position: absolute; z-index: -1; right: -20%; bottom: -10%; width: 90%; aspect-ratio: 1; pointer-events: none;
+      background: radial-gradient(closest-side, rgba(196, 151, 58, .16), rgba(196, 151, 58, 0));
     }
 
-    .modal__photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block
+    /* Email pill (appears after the hero, hides at Contact) */
+    .pill {
+      position: fixed; z-index: 50;
+      right: calc(max(0px, (100% - 480px) / 2) + 82px); /* left of the 56px assistant button; % of the viewport minus any scrollbar */
+      bottom: max(16px, calc(env(safe-area-inset-bottom) + 8px));
+      display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 20px 0 16px;
+      border-radius: 999px; background: rgba(7, 16, 31, .92); border: 1px solid rgba(196, 151, 58, .45);
+      color: var(--ivory); font-size: 14px; font-weight: 600; line-height: 1; text-decoration: none;
+      opacity: 0; visibility: hidden;
     }
+    .pill svg { width: 18px; height: 18px; color: var(--gold); flex: none; }
 
-    .photo-ph {
-      position: relative;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      text-align: center;
-      padding: 16px
+    /* ================================================================
+       ASSISTANT (offline, answers from his published profile)
+       ================================================================ */
+    .asv-fab {
+      position: fixed; z-index: 60;
+      right: calc(max(0px, (100% - 480px) / 2) + 16px);
+      bottom: max(16px, calc(env(safe-area-inset-bottom) + 8px));
+      display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
+      background: var(--navy2); border: 1px solid rgba(196, 151, 58, .6); color: var(--gold);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+      opacity: 0; visibility: hidden; transform: translateY(8px);
+      transition: opacity .35s var(--expo), transform .35s var(--expo), visibility 0s .35s;
     }
+    .asv-fab.is-shown { opacity: 1; visibility: visible; transform: none; transition: opacity .35s var(--expo), transform .35s var(--expo), visibility 0s; }
+    .asv-fab svg { width: 24px; height: 24px; }
+    .asv-fab:focus-visible { outline-color: var(--gold2); }
+    .asv-open .asv-fab, .asv-open .pill { opacity: 0 !important; visibility: hidden !important; }
 
-    .photo-ph::before {
-      content: '';
-      position: absolute;
-      inset: 12px;
-      border: 1px solid rgba(196, 151, 58, .45);
-      border-radius: 10px
+    .asv-scrim { position: fixed; inset: 0; z-index: 94; background: rgba(7, 16, 31, .45); opacity: 0; visibility: hidden; transition: opacity .3s var(--expo), visibility 0s .3s; }
+    .asv-panel {
+      position: fixed; z-index: 95; bottom: 0; left: 50%;
+      width: min(100%, 480px); height: min(86svh, 640px); height: min(86vh, 640px);
+      display: flex; flex-direction: column; overflow: hidden;
+      background: var(--ivory); color: var(--navy); border-radius: 20px 20px 0 0;
+      box-shadow: 0 -12px 48px rgba(7, 16, 31, .4);
+      opacity: 0; visibility: hidden; transform: translate(-50%, 24px);
+      transition: opacity .3s var(--expo), transform .35s var(--expo), visibility 0s .35s;
     }
+    @supports (height: 100svh) { .asv-panel { height: min(86svh, 640px); } }
+    @media (min-width: 481px) { .asv-panel { bottom: 16px; border-radius: 20px; height: min(80vh, 640px); } }
+    .asv-open .asv-scrim { opacity: 1; visibility: visible; transition: opacity .3s var(--expo), visibility 0s; }
+    .asv-open .asv-panel { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition: opacity .3s var(--expo), transform .35s var(--expo), visibility 0s; }
 
-    .photo-ph b {
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: .2em;
-      text-transform: uppercase
+    .asv-head { display: flex; align-items: center; gap: 12px; padding: 12px 8px 12px 20px; background: var(--navy); color: var(--ivory); }
+    .asv-head__txt { flex: 1; min-width: 0; }
+    .asv-title { font: 500 22px/1.2 var(--serif); }
+    .asv-sub { font-size: 12px; color: var(--ivory-60); }
+    .asv-x { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; color: var(--ivory); }
+    .asv-x svg { width: 18px; height: 18px; }
+    .asv-x:focus-visible { outline-color: var(--gold2); }
+
+    .asv-log { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 10px; }
+    .asv-msg { max-width: 88%; padding: 11px 14px; border-radius: 16px; font-size: 15px; line-height: 1.5; animation: asvIn .3s var(--expo) both; }
+    .asv-msg--bot { align-self: flex-start; background: #fff; color: var(--navy); border: 1px solid var(--hair-ivory); border-bottom-left-radius: 4px; }
+    .asv-msg--me { align-self: flex-end; background: var(--navy); color: var(--ivory); border-bottom-right-radius: 4px; }
+    .asv-row { display: flex; flex-wrap: wrap; gap: 8px; align-self: flex-start; max-width: 100%; animation: asvIn .3s var(--expo) both; }
+    .asv-chip, .asv-act {
+      display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border-radius: 999px;
+      font: 600 13px/1 var(--sans); text-decoration: none; white-space: nowrap;
     }
+    .asv-chip { border: 1px solid rgba(196, 151, 58, .7); color: var(--navy); background: transparent; }
+    .asv-act { background: var(--gold); color: var(--navy); border: 1px solid var(--gold); }
+    .asv-act svg { width: 16px; height: 16px; }
+    .asv-chip:active, .asv-act:active { scale: .97; }
+    /* 40px pills, but every one gets a 48px tap area */
+    .asv-chip, .asv-act { position: relative; }
+    .asv-chip::after, .asv-act::after { content: ''; position: absolute; inset: -4px 0; }
 
-    .photo-ph span {
-      color: rgba(255, 255, 255, .55);
-      font-size: 11px
+    .asv-form { display: flex; gap: 8px; padding: 10px 12px max(12px, calc(env(safe-area-inset-bottom) + 8px)); border-top: 1px solid var(--hair-ivory); background: var(--ivory); }
+    .asv-in {
+      flex: 1; min-width: 0; height: 48px; padding: 0 16px; border-radius: 999px;
+      border: 1px solid rgba(14, 26, 48, .25); background: #fff; color: var(--navy); font: 400 16px/1 var(--sans);
     }
-
-    .modal__range {
-      font: 600 34px/1.1 var(--display);
-      color: var(--gold)
-    }
-
-    .modal__title {
-      margin-top: 6px;
-      font: 600 24px/1.15 var(--display);
-      color: var(--navy)
-    }
-
-    .modal__meta {
-      margin-top: 8px;
-      font-size: 13px;
-      color: var(--text-soft)
-    }
-
-    .modal__detail {
-      margin-top: 14px;
-      font-size: 14px;
-      line-height: 1.65;
-      color: var(--text)
-    }
-
-    .modal__card>[hidden] {
-      display: none
-    }
-
-    /* -- 4 · HONOURS (navy) ---------------------------------- */
-    #honours {
-      background: var(--navy);
-      overflow: hidden
-    }
-
-    #honours .heading {
-      color: var(--ivory)
-    }
-
-    .awards {
-      list-style: none;
-      margin-top: 36px;
-      border-top: 1px solid rgba(196, 151, 58, .25)
-    }
-
-    .awards li {
-      border-bottom: 1px solid rgba(196, 151, 58, .25)
-    }
-
-    /* Watermark year runs vertically in a reserved right gutter, so it never meets the text */
-    .award {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      min-height: 184px;
-      padding: 30px 80px 30px 0;
-      text-align: left;
-      overflow: hidden
-    }
-
-    .award__year {
-      position: absolute;
-      right: -4px;
-      top: 50%;
-      transform: translateY(-50%) rotate(180deg);
-      writing-mode: vertical-rl;
-      font: 600 82px/1 var(--display);
-      font-variant-numeric: lining-nums;
-      color: var(--gold);
-      opacity: .1;
-      pointer-events: none
-    }
-
-    .award__name {
-      font: 600 30px/1.12 var(--display);
-      color: var(--ivory)
-    }
-
-    .award__by {
-      margin-top: 12px;
-      color: var(--gold);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .14em;
-      text-transform: uppercase
-    }
-
-    .award__ctx {
-      margin-top: 4px;
-      font-size: 14px;
-      color: var(--ivory-60)
-    }
-
-    .award__hint {
-      margin-top: 10px;
-      font-size: 11px;
-      color: var(--ivory-60)
-    }
-
-    /* Honour roll marquee: two rows, opposite directions */
-    .marquee {
-      margin: 56px -24px 0;
-      cursor: pointer;
-      -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
-      mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent)
-    }
-
-    .marquee:focus-visible {
-      outline-offset: -2px
-    }
-
-    .marquee__row {
-      overflow: hidden
-    }
-
-    .marquee__row+.marquee__row {
-      margin-top: 14px
-    }
-
-    .marquee__track {
-      display: flex;
-      width: max-content;
-      list-style: none;
-      font: 500 22px/1.4 var(--display);
-      white-space: nowrap;
-      animation: marquee 40s linear infinite
-    }
-
-    .marquee__row--company .marquee__track {
-      animation-direction: reverse
-    }
-
-    .marquee__track li {
-      display: flex;
-      align-items: center
-    }
-
-    .marquee__track li::after {
-      content: '';
-      width: 5px;
-      height: 5px;
-      margin: 0 18px;
-      border-radius: 50%;
-      background: var(--gold);
-      flex: none
-    }
-
-    .marquee__row--personal {
-      color: var(--ivory)
-    }
-
-    .marquee__row--company {
-      color: var(--gold)
-    }
-
-    .marquee.is-paused .marquee__track,
-    .marquee.is-off .marquee__track {
-      animation-play-state: paused
-    }
-
-    @keyframes marquee {
-      to {
-        transform: translateX(-50%)
-      }
-    }
-
-    .thirty {
-      margin-top: 72px;
-      text-align: center
-    }
-
-    .thirty__num {
-      font: 600 120px/1 var(--display);
-      color: var(--gold);
-      font-variant-numeric: lining-nums
-    }
-
-    .thirty__cap {
-      margin-top: 4px;
-      font: italic 500 22px/1.3 var(--display);
-      color: var(--ivory-60)
-    }
-
-    .thirty__link {
-      display: inline-flex;
-      align-items: center;
-      min-height: 48px;
-      margin-top: 14px;
-      color: var(--ivory);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .04em;
-      border-bottom: 1px solid var(--gold)
-    }
-
-    /* -- 5 · FOOTER (deeper navy) ---------------------------- */
-    #footer {
-      position: relative;
-      background: var(--navy-deep);
-      padding: 96px 24px 40px;
-      color: var(--ivory)
-    }
-
-    #footer .heading {
-      color: var(--ivory)
-    }
-
-    .contact__row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 28px
-    }
-
-    .contact__btn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      min-height: 68px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, .2);
-      background: rgba(255, 255, 255, .06);
-      color: var(--ivory);
-      font-size: 12px;
-      font-weight: 600;
-      transition: transform .22s var(--ease)
-    }
-
-    .contact__btn:active {
-      transform: scale(.97)
-    }
-
-    .contact__btn svg {
-      color: var(--gold2)
-    }
-
-    .contact__hours {
-      margin-top: 16px;
-      font-size: 12px;
-      color: var(--ivory-60)
-    }
-
-    .contact__save {
-      width: 100%;
-      margin-top: 20px
-    }
-
-    .footer__socials {
-      display: flex;
-      gap: 12px;
-      margin-top: 48px
-    }
-
-    .footer__social-btn {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 1px solid rgba(196, 151, 58, .45);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold);
-      transition: transform .2s ease, border-color .2s ease
-    }
-
-    .footer__social-btn:active {
-      transform: scale(.94);
-      border-color: var(--gold)
-    }
-
-    .footer__social-btn svg {
-      width: 20px;
-      height: 20px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 1.6;
-      stroke-linecap: round;
-      stroke-linejoin: round
-    }
-
-    .footer__companies {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0 6px;
-      margin: 16px 0 0 -8px;
-      font-size: 12px;
-      color: var(--ivory-60)
-    }
-
-    .footer__companies a {
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 0 8px
-    }
-
-    .footer__companies span {
-      align-self: center;
-      color: var(--gold)
-    }
-
-    .footer__signoff {
-      margin-top: 56px;
-      padding-top: 32px;
-      border-top: 1px solid rgba(196, 151, 58, .2);
-      text-align: center;
-      font: italic 500 32px/1.2 var(--display);
-      color: var(--gold)
-    }
-
-    .footer__copyright {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 10px;
-      color: rgba(250, 247, 242, .35)
-    }
-
-    @media(prefers-reduced-motion:reduce) {
-
-      *,
-      *::before,
-      *::after {
-        animation-duration: .001ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .001ms !important
-      }
-
-      /* Marquee stops; rows become swipeable strips instead */
-      .marquee__track {
-        animation: none !important
-      }
-
-      .marquee__row {
-        overflow-x: auto;
-        scrollbar-width: none
-      }
-
-      .marquee__track [aria-hidden="true"] {
-        display: none
-      }
+    .asv-in:focus { outline: 2px solid var(--navy); outline-offset: 1px; }
+    .asv-send { display: grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: 50%; background: var(--navy); color: var(--gold2); }
+    .asv-send svg { width: 20px; height: 20px; }
+    @keyframes asvIn { from { opacity: 0; transform: translateY(6px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .asv-msg, .asv-row { animation: none; }
+      .asv-panel, .asv-open .asv-panel { transform: translate(-50%, 0); }
+      .asv-fab { transform: none; }
     }
   </style>
+  <noscript>
+    <style>
+      .full[hidden] { display: block; }
+      .more { display: none; }
+    </style>
+  </noscript>
 </head>
 
-<body><a class="skip" href="#about">Skip to about</a>
-  <main>
-    <!-- 1 · HERO -->
-    <section id="hero" aria-labelledby="heroName">
-      <img class="hero__photo" src="images/hero-soft.webp" width="1024" height="1536"
-        alt="Portrait of Avanish Singh Visen, arms crossed, in a dark suit" fetchpriority="high" decoding="async">
-      <div class="hero__grad hero__grad--top" aria-hidden="true"></div>
-      <div class="hero__grad hero__grad--bottom" aria-hidden="true"></div>
+<body>
+  <a class="skip" href="#contact">Skip to contact</a>
 
-      <div class="hero__text">
-        <h1 class="hero__name" id="heroName">
-          <span class="hero__line"><span>Avanish</span></span>
-          <span class="hero__line"><span>Singh Visen</span></span>
-        </h1>
-        <div class="hero__underline" aria-hidden="true"></div>
-        <p class="hero__title">Director &amp; CEO · DCJ Group</p>
-      </div>
+  <div class="page">
+    <main>
 
-      <div class="hero__bottom">
-        <div class="hero__actions">
-          <button class="btn btn--primary" type="button" data-save-contact>Save contact</button>
-          <a class="btn btn--ghost" href="#footer" data-connect>Connect</a>
+      <!-- =============================================================
+           1 · HERO — card face (navy)
+           ============================================================= -->
+      <section class="hero navy" aria-labelledby="name">
+        <div class="hero__portrait">
+          <img class="hero__img" src="images/hero-1024.webp"
+            srcset="images/hero-640.webp 640w, images/hero-1024.webp 1024w"
+            sizes="(min-width: 481px) 620px, 125vw" width="1024" height="1536" fetchpriority="high"
+            alt="Avanish Singh Visen, smiling, arms crossed, in a dark suit, lit from behind in gold.">
         </div>
-        <ul class="hero__stats" aria-label="Highlights">
-          <li class="stat" data-value="20+"><span class="stat__num"></span><span class="stat__lbl">Years of leading
-              with passion</span></li>
-          <li class="stat" data-value="30+"><span class="stat__num"></span><span class="stat__lbl">National and
-              international honours</span></li>
-          <li class="stat" data-value="3"><span class="stat__num"></span><span class="stat__lbl">Companies, one
-              vision</span></li>
-          <li class="stat" data-value="5"><span class="stat__num"></span><span class="stat__lbl">Industries</span></li>
-        </ul>
+
+        <div class="hero__text">
+          <!-- COPY hero.name: two fixed lines -->
+          <h1 id="name" class="hero__name d-xl" data-r="lines"><span class="ln"><span class="ln__i">Avanish</span></span> <span class="ln"><span class="ln__i">Singh Visen</span></span></h1>
+
+          <!-- COPY hero.title: ≤ 28 characters, one line -->
+          <p class="hero__title d-s" data-r="fade">Director &amp; CEO, DCJ Group</p>
+
+          <!-- COPY hero.companies: the three brand names -->
+          <p class="hero__cos b-s" data-r="fade">APPL · Encraft · Enzocraft</p>
+
+          <span class="hero__rule" data-r="rule" aria-hidden="true"></span>
+
+          <div class="ledger">
+            <a class="ledger__cell press" href="#record" aria-label="20+ years in industry. Go to his record.">
+              <!-- COPY hero.ledger1 (numeral ≤ 3 chars; label ≤ 18 chars) -->
+              <span class="ledger__num d-l num" data-r="lines"><span class="ln"><span class="ln__i">20<span class="plus">+</span></span></span></span>
+              <span class="ledger__label b-s" data-r="fade">Years in industry
+                <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 .5v8.5M1.5 5.5 5 9l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.2" /></svg></span>
+            </a>
+            <a class="ledger__cell press" href="#honours" aria-label="30+ group-wide honours. Go to honours.">
+              <!-- COPY hero.ledger2 -->
+              <span class="ledger__num d-l num" data-r="lines"><span class="ln"><span class="ln__i">30<span class="plus">+</span></span></span></span>
+              <span class="ledger__label b-s" data-r="fade">Group-wide honours
+                <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 .5v8.5M1.5 5.5 5 9l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.2" /></svg></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================
+           2 · ABOUT — the letter: who he is, as a person and as a leader (ivory)
+           Every line is sourced from his own site. See about.md for sources.
+           ============================================================= -->
+      <section class="about ivory sec" id="about" aria-labelledby="about-h">
+        <h2 id="about-h" class="sr-only">About Avanish Singh Visen</h2>
+
+        <p class="about__lede d-m" data-r="lines">Avanish grew up in a small town, in a family that farmed.</p>
+
+        <div class="about__body">
+          <p data-r="fade">His grandfather and his father taught him two things he still carries: never give up on your dreams, and never give up your integrity. School was a pleasure because he loved to learn and explore, and that curiosity has stayed with him. He still says it plainly: <q>most success starts with where you come from.</q></p>
+        </div>
+
+        <figure class="pillars" data-r="fade">
+          <figcaption class="caps">The four pillars of his life</figcaption>
+          <ul role="list">
+            <li>Trust</li>
+            <li>Loyalty</li>
+            <li>Transparency</li>
+            <li>Heart-to-heart relationships</li>
+          </ul>
+        </figure>
+
+        <h3 class="about__kicker caps" data-r="fade">As a leader</h3>
+        <div class="about__body">
+          <p data-r="fade"><q>Machines build products, but people build companies,</q> he says. He coaches his managers to soften their intensity, so that employees, partners and clients never feel overwhelmed, because everyone is human before the role they play.</p>
+          <p data-r="fade">His rule at work is <em>speed and quality</em>. He decides quickly, and he undoes a wrong call just as quickly: <q>Admitting failure is difficult but refusing to change bad decisions is dangerous.</q> The one thing he says he has had to let go of as a leader is <q>needing to be right, every time.</q></p>
+          <p data-r="fade">When recognition comes, he hands it to his people: <q>Thank you, my dear team, for all your grit and grace under pressure.</q></p>
+        </div>
+
+        <h3 class="about__kicker caps" data-r="fade">As a person</h3>
+        <div class="about__body">
+          <p data-r="fade"><q>God, Nature and Family are key driving forces,</q> he says. Away from work he meditates, writes poetry and spends his time with his parents and family. He measures success quietly: <q>I think success is the inner sense of satisfaction.</q></p>
+        </div>
+
+        <blockquote class="about__quote" data-r="fade">
+          <p class="d-m"><q>Life is all about relationships and making memories.</q></p>
+        </blockquote>
+
+      <!-- Signature: potrace outline (sig.svg), viewBox trimmed to the ink.
+           The reveal mask plays the #sigStrokes centrelines in DOM order (writing order:
+           Avanish, i-dot, S, ingh, i-dot). If #sigStrokes is ever emptied, JS falls back
+           to a feathered left-to-right wipe. -->
+      <div class="sig">
+        <svg viewBox="13 41 466 124" role="img" aria-label="Signature of Avanish Singh Visen">
+          <defs>
+            <mask id="sigMask" maskUnits="userSpaceOnUse" x="0" y="0" width="532" height="171">
+              <g id="sigStrokes" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+<path fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" d="M14.2 150.2 L16.0 155.0 L18.0 157.2 L23.0 160.2 L25.2 160.5 L27.5 161.5 L40.5 161.5 L47.5 160.2 L57.8 157.0 L67.5 152.8 L78.0 147.0 L95.0 135.0 L107.2 123.8 L113.5 117.0 L117.0 112.8 L118.0 109.2 L118.0 108.5 L116.8 108.2 L98.5 109.5 L94.2 110.5 L79.2 112.2 L63.0 115.5 L43.8 121.5 L31.2 127.5 L22.8 133.5 L18.8 137.5 L16.5 141.0 L15.0 144.0 L14.2 150.0 M118.0 108.5 L122.2 107.8 L122.8 107.2 L124.0 103.2 L128.2 98.0 L137.2 84.5 L144.8 71.8 L145.0 70.5 L147.2 67.5 L149.5 66.5 L150.8 58.8 L151.5 57.0 L153.8 54.5 L154.0 53.0 L155.5 50.8 L157.2 46.2 L158.0 45.8 M149.5 66.5 L150.2 67.8 L147.5 101.2 L147.8 133.2 L149.5 140.5 M147.5 108.0 L150.0 107.8 L158.5 108.8 L159.8 102.0 M158.5 108.8 L158.2 117.5 L159.2 125.2 L160.8 128.8 L162.8 130.2 L164.5 129.8 L165.8 128.5 L167.5 124.8 L168.8 118.8 L169.2 113.0 L169.8 112.2 L168.2 109.5 M169.8 112.2 L172.5 113.0 L178.2 112.5 L179.8 113.0 L184.0 108.0 L186.0 107.5 L189.8 110.2 L190.0 117.2 L190.5 118.2 L192.2 119.5 L194.2 119.5 L196.2 118.8 L198.8 116.2 L201.2 115.0 L201.5 107.5 L203.2 102.0 M201.0 115.2 L202.0 118.0 L202.8 118.8 L204.2 118.8 L206.2 117.2 L208.2 114.0 L210.2 112.0 L212.0 111.5 L213.0 112.5 L214.5 116.8 L216.8 119.0 L219.5 118.8 L222.2 116.2 L225.8 115.0 L227.0 118.5 L228.2 119.8 L230.0 120.0 L232.8 119.0 L237.5 113.8 L240.5 112.5 L241.2 113.5 L242.0 117.8 L242.5 118.2 L242.5 120.8 L240.0 122.0 L236.8 126.2 L235.2 129.5 L234.0 135.0 L234.0 137.5 L234.8 140.2 L238.0 143.2 L242.2 143.0 L243.8 141.5 L245.0 138.8 L245.5 134.8 L245.2 131.0 L244.8 127.2 L242.8 120.8 M242.5 118.5 L252.8 112.0 L257.0 111.2 L257.5 107.5 L260.0 106.5 L261.8 104.5 L269.2 92.0 L278.5 72.2 L282.8 58.8 L283.5 52.2 L283.2 48.8 L282.8 46.5 L281.8 45.0 L279.8 43.5 L275.5 43.2 L273.2 44.2 L269.5 48.0 L267.5 51.0 L264.5 57.5 L261.8 66.5 L258.5 85.0 L257.5 98.5 L257.0 99.8 L257.2 107.2 M257.0 111.2 L257.2 118.8 L257.8 120.2 L258.5 120.8 L260.8 119.5 L264.2 114.5 L266.2 113.8 L267.0 114.0 L272.2 119.8 L275.8 119.8 L278.8 117.5 L283.5 111.2 M240.5 112.5 L239.8 105.0 L240.2 101.2 L242.8 97.8 L244.5 97.0 L245.2 97.2 M225.8 115.0 L226.0 108.8 L227.2 101.8 M188.2 109.2 L187.0 110.0 L183.2 115.8 L179.5 116.8 L179.5 113.2 M147.5 107.8 L122.8 107.8"/>
+<path fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" d="M227.7 93.5 L228.8 93.5"/>
+<path fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" d="M306.5 80.8 L308.0 85.8 L310.2 89.5 L315.0 94.5 L321.2 99.2 L338.2 108.5 L368.8 122.0 L373.8 126.2 L375.2 129.8 L375.2 133.8 L372.8 138.8 L368.5 142.2 L362.0 145.0 L354.8 146.0 L348.5 145.5 L344.2 143.5 L343.0 142.2 L342.0 139.0 L342.2 136.5 L344.2 133.5 L348.2 129.2 L353.0 126.0 L357.0 124.5 L359.0 125.0 M306.5 80.8 L306.5 78.0 L308.2 73.2 L309.8 71.0 L314.8 66.2 L319.0 63.5 L324.2 61.0 L341.5 55.5 L361.0 52.5 L377.0 51.5 L390.2 51.5 L408.0 52.5 L412.2 53.5 L418.0 54.0 L421.2 55.2 L425.2 55.8 L428.2 57.0 L430.2 58.5"/>
+<path fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" d="M385.8 115.8 L386.2 118.0 L388.0 119.8 L390.2 119.8 L392.8 118.8 L396.5 114.8 L398.8 114.0 L399.2 113.5 L399.8 106.0 L401.0 102.2 M399.0 113.8 L400.0 118.0 L400.8 118.8 L402.2 118.8 L403.5 118.0 L406.2 114.0 L408.2 112.0 L410.0 111.5 L411.0 112.5 L412.5 116.8 L414.8 119.0 L417.2 118.8 L420.0 116.5 L423.2 115.2 L424.2 116.8 L426.2 116.5 L428.8 114.2 L434.5 106.8 L434.8 106.0 L432.5 104.2 L430.5 104.2 L426.8 107.8 L423.2 115.0 M434.8 106.0 L437.5 106.2 L438.8 108.2 L439.5 111.8 L439.8 122.2 L439.0 123.8 L436.2 124.8 L433.5 128.0 L430.2 133.2 L427.2 139.8 L425.8 144.5 L425.0 149.8 L425.8 156.5 L426.8 157.8 L428.0 158.2 L430.5 158.0 L433.0 155.5 L435.2 151.5 L438.2 140.8 L439.8 128.0 L439.5 123.8 M439.8 117.8 L443.2 116.5 L447.2 112.8 L450.5 112.0 L451.0 107.5 L453.5 106.5 L455.5 104.2 L461.2 94.8 L468.8 80.0 L473.5 68.2 L476.5 57.2 L477.0 52.2 L476.5 47.2 L475.2 45.0 L472.5 43.2 L469.0 43.2 L466.8 44.2 L463.0 48.0 L460.5 51.8 L456.2 62.2 L453.2 76.0 L451.8 86.5 L451.5 93.5 L450.5 99.8 L450.8 107.2 M450.5 112.0 L450.8 118.8 L451.0 119.8 L452.5 120.5 L455.2 118.5 L457.8 114.5 L459.8 113.8 L460.5 114.0 L465.8 119.8 L469.2 119.8 L472.2 117.5 L477.0 111.2 M385.8 115.8 L385.8 108.0 L386.8 102.2"/>
+<path fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" d="M387.3 93.6 L388.5 93.6"/>
+              </g>
+            </mask>
+          </defs>
+          <path class="sig__ink" fill-rule="evenodd" d="M 270.683 44.973 C 262.359 52.282, 256.116 76.450, 256.026 101.719 L 256 108.939 250.481 112.469 C 243.758 116.770, 244.312 116.786, 243.053 112.250 C 241.206 105.599, 241.694 101.247, 244.491 99.414 C 247.175 97.655, 246.983 96, 244.096 96 C 240.714 96, 238.506 99.798, 238.419 105.763 C 238.350 110.496, 237.861 111.884, 235.112 115.158 C 229.555 121.778, 227.545 119.663, 228.166 107.848 C 228.436 102.724, 228.211 101.500, 227 101.500 C 225.938 101.500, 225.208 103.295, 224.500 107.652 C 222.787 118.189, 218.207 120.982, 214.981 113.456 C 212.767 108.291, 211.112 108.396, 207.500 113.930 C 206.400 115.615, 204.938 116.996, 204.250 116.997 C 202.750 117.001, 202.557 110.030, 203.926 105.257 C 204.529 103.154, 204.499 101.808, 203.839 101.401 C 202.001 100.265, 200.677 102.848, 200.210 108.481 C 199.825 113.121, 199.259 114.446, 196.763 116.546 C 192.799 119.881, 191 118.457, 191 111.986 C 191 107.691, 190.743 107.152, 188.415 106.568 C 185.064 105.727, 182.254 106.657, 180.987 109.025 C 179.355 112.074, 173.046 112.775, 170.915 110.144 C 168.086 106.650, 167.504 107.587, 167.416 115.783 C 167.354 121.565, 166.857 124.289, 165.481 126.389 C 162.220 131.366, 161 127.671, 161 112.809 C 161 99.389, 160.184 97.231, 157.519 103.609 C 156.430 106.215, 155.570 107.049, 154.424 106.609 C 153.551 106.274, 151.929 106, 150.820 106 C 148.965 106, 148.850 105.538, 149.377 100.250 C 149.692 97.087, 150.467 87.075, 151.099 78 C 152.164 62.714, 152.497 60.939, 155.624 53.874 C 159.318 45.529, 159.461 45, 158.020 45 C 157.482 45, 156.066 46.911, 154.874 49.247 C 153.683 51.582, 152.131 53.945, 151.426 54.497 C 150.721 55.048, 149.673 57.300, 149.098 59.500 C 147.001 67.512, 122.774 105.393, 119.105 106.396 C 118.222 106.638, 112.775 107.122, 107 107.472 C 76.892 109.297, 47.002 116.746, 29.855 126.697 C 10.609 137.866, 7.535 157.518, 24.257 162.484 C 47.090 169.264, 88.930 148.450, 115.399 117.141 L 121.297 110.164 130.399 109.487 C 135.404 109.114, 140.850 108.965, 142.500 109.155 L 145.500 109.500 146 124.598 C 146.361 135.504, 146.891 140.166, 147.908 141.390 C 150.599 144.630, 151.206 141.575, 150.086 130.441 C 148.254 112.243, 148.451 110, 151.878 110 C 155.879 110, 156.674 111.442, 157.237 119.718 C 158.345 135.995, 168.024 135.858, 169.708 119.541 L 170.280 114 174.001 114 C 177.427 114, 177.685 114.198, 177.247 116.488 C 176.325 121.309, 179.885 120.874, 184.679 115.579 L 189 110.807 189 114.703 C 189 120.969, 192.442 122.800, 197.195 119.061 C 199.634 117.143, 199.678 117.143, 201.320 119.061 C 203.598 121.721, 204.503 121.516, 207.134 117.750 C 210.447 113.006, 211.167 112.830, 212.919 116.337 C 214.766 120.032, 218.009 120.879, 221.516 118.581 C 223.780 117.098, 224.062 117.153, 226.446 119.536 C 229.265 122.356, 232.331 121.607, 236.407 117.102 C 240.922 112.114, 241.426 118.343, 237.032 124.826 C 231.417 133.110, 232.034 142.188, 238.354 144.288 C 245.502 146.663, 249.374 138.539, 246.577 127.032 C 244.641 119.067, 244.827 118.506, 250.594 114.942 C 254.551 112.496, 256 113.042, 256 116.977 C 256 121.138, 256.960 123, 259.107 123 C 260.148 123, 261.002 122.662, 261.004 122.250 C 261.006 121.838, 261.945 119.962, 263.092 118.081 L 265.176 114.662 268.537 118.331 C 270.386 120.349, 272.760 122, 273.813 122 C 275.784 122, 280.110 118.240, 282.765 114.219 C 285.399 110.228, 283.293 110.670, 279.461 114.911 C 274.973 119.879, 274.628 119.902, 270.731 115.500 C 266.832 111.096, 265.910 111.123, 262.131 115.750 L 259.067 119.500 259.034 115.281 C 259.007 111.937, 259.946 109.601, 263.560 104.013 C 279.298 79.685, 288.517 50.671, 282.595 44.110 C 279.764 40.974, 274.831 41.332, 270.683 44.973 M 464.241 44.775 C 456.149 52.334, 450.727 71.813, 449.312 98.408 C 448.689 110.115, 448.627 110.362, 445.589 113.084 L 442.500 115.854 441.854 113.177 C 441.498 111.705, 440.927 109.263, 440.585 107.750 C 440.076 105.504, 439.415 105, 436.981 105 C 435.341 105, 434 104.550, 434 104 C 434 103.450, 432.909 103, 431.576 103 C 429.147 103, 428.363 103.792, 421.673 112.995 C 417.201 119.147, 415.466 119.254, 413.013 113.530 C 410.766 108.289, 409.131 108.374, 405.500 113.922 C 401.570 119.926, 400.633 118.933, 401.356 109.526 C 401.788 103.916, 401.659 101, 400.981 101 C 399.631 101, 398 105.374, 398 108.994 C 398 112.241, 391.925 119.473, 389.791 118.766 C 388.900 118.471, 388.410 115.652, 388.211 109.669 C 388.050 104.835, 387.486 101, 386.936 101 C 383.613 101, 382.801 116.801, 385.961 119.961 C 388.288 122.288, 393.317 121.145, 395.056 117.895 C 396.352 115.473, 397.700 115.478, 398.471 117.908 C 399.450 120.994, 402.243 121.427, 404.295 118.811 C 409.414 112.283, 408.984 112.458, 410.827 116.149 C 412.748 119.996, 415.867 120.907, 419.178 118.588 C 421.177 117.188, 421.555 117.193, 423.153 118.638 C 425.101 120.402, 427.256 118.773, 433.221 111.030 C 436.458 106.830, 436.753 107.051, 437.607 114.310 C 438.257 119.847, 438.152 120.196, 434.099 125.974 C 423.749 140.729, 420.741 158.363, 428.324 159.824 C 435.200 161.148, 441.968 143.437, 441.994 124.055 C 441.999 120.598, 442.598 118.986, 444.687 116.805 C 447.937 113.412, 448.996 113.276, 449.014 116.250 C 449.060 123.824, 451.997 125.473, 455.638 119.971 C 458.807 115.182, 459.252 115.132, 462.844 119.151 C 466.526 123.272, 469.575 122.576, 474.577 116.472 C 479.339 110.660, 478.209 109.358, 473.154 114.833 C 468.494 119.881, 468.263 119.898, 464 115.500 C 459.751 111.116, 458.454 111.116, 455.868 115.499 C 454.733 117.423, 453.347 118.714, 452.788 118.369 C 450.849 117.171, 452.769 110.424, 456.844 104.120 C 472.424 80.015, 481.678 52.262, 476.679 44.633 C 474.215 40.872, 468.347 40.939, 464.241 44.775 M 272.150 48.346 C 266.461 54.215, 261.308 74.502, 259.554 97.934 L 258.922 106.368 260.834 103.934 C 266.178 97.126, 277.104 74.313, 280.405 63.068 C 284.757 48.246, 280.172 40.069, 272.150 48.346 M 465.164 48.617 C 460.074 54.793, 456.547 67.440, 454.044 88.500 C 453.456 93.450, 452.716 99.188, 452.399 101.250 C 451.505 107.081, 453.351 105.783, 458.540 96.933 C 467.964 80.856, 476.041 60.035, 475.968 52.003 C 475.899 44.346, 470.166 42.549, 465.164 48.617 M 362 50.986 C 328.792 53.938, 305 65.711, 305 79.190 C 305 91.575, 318.560 101.934, 355.876 118.058 C 369.284 123.851, 374 127.461, 374 131.931 C 374 138.283, 364.547 143.962, 354 143.946 C 342.987 143.930, 341.005 139.942, 348.357 132.590 C 350.754 130.193, 354.361 127.637, 356.372 126.910 C 360.704 125.344, 360.585 123.440, 356.169 123.645 C 352.823 123.800, 346.311 128.063, 343.010 132.260 C 337.709 138.999, 340.526 145.419, 349.523 147.107 C 367.483 150.475, 383.663 136.073, 374.352 125.006 C 372.307 122.576, 358.748 115, 356.444 115 C 354.766 115, 327.475 101.140, 322.044 97.529 C 300.131 82.961, 305.939 67.488, 336.500 59.019 C 359.869 52.543, 410.703 52.305, 425.872 58.601 C 430.195 60.395, 432 60.372, 432 58.526 C 432 52.477, 392.760 48.251, 362 50.986 M 146.281 71.979 C 142.758 78.406, 132.556 94.604, 128.816 99.707 C 126.717 102.571, 125 105.159, 125 105.457 C 125 105.756, 129.633 106, 135.296 106 L 145.591 106 147.183 87.750 C 148.059 77.713, 148.615 69.327, 148.419 69.115 C 148.223 68.903, 147.261 70.192, 146.281 71.979 M 227 94 C 227 95.111, 227.667 96, 228.500 96 C 229.333 96, 230 95.111, 230 94 C 230 92.889, 229.333 92, 228.500 92 C 227.667 92, 227 92.889, 227 94 M 386.446 93.087 C 385.416 94.755, 387.733 96.667, 389.113 95.287 C 390.267 94.133, 389.545 92, 388 92 C 387.515 92, 386.816 92.489, 386.446 93.087 M 430.415 107.191 C 427.563 110.411, 424.799 115.004, 425.727 114.982 C 426.999 114.952, 433.179 107.038, 432.806 105.918 C 432.616 105.348, 431.540 105.920, 430.415 107.191 M 183.444 111.444 C 182.501 112.884, 181.979 114.312, 182.285 114.618 C 182.590 114.924, 183.612 113.995, 184.556 112.556 C 185.499 111.116, 186.021 109.688, 185.715 109.382 C 185.410 109.076, 184.388 110.005, 183.444 111.444 M 95 112.143 C 91.975 112.640, 85.054 113.750, 79.619 114.608 C 36.057 121.484, 6.737 140.838, 18.573 154.904 C 28.421 166.608, 62.254 157.840, 91 136.135 C 96.951 131.641, 116 113.096, 116 111.796 C 116 110.755, 102.031 110.986, 95 112.143 M 238.020 126.960 C 235.414 132.068, 235.247 140.479, 237.724 141.866 C 242.375 144.468, 244.794 138.527, 242.934 129.070 C 241.533 121.949, 240.749 121.612, 238.020 126.960 M 435.095 128.607 C 430.076 134.987, 425.391 148.952, 426.530 154.138 C 428.625 163.674, 436.243 148.099, 437.236 132.250 C 437.687 125.048, 437.776 125.199, 435.095 128.607" />
+        </svg>
       </div>
-    </section>
+      </section>
 
-    <!-- 2 · ABOUT -->
-    <section class="section" id="about" aria-labelledby="aboutTitle">
-      <p class="label reveal">About</p>
-      <h2 class="heading reveal" id="aboutTitle">Leading with speed.<br>Building with quality.</h2>
-      <div class="about__body">
-        <p class="reveal">Avanish Singh Visen is the Director and CEO of DCJ Group, home to APPL, Encraft and
-          Enzocraft. Over two decades he has worked across automotive, IT, home appliances, polymer and fenestration,
-          with Lenovo, Videocon and Mahindra.</p>
-        <p class="reveal">He rose from SCM Head to CEO within the group, and built it on one rule: move fast, and never
-          compromise on quality.</p>
-      </div>
-      <!-- Static signature. TODO (later pass): trace to SVG and animate -->
-      <img class="signature reveal" src="images/signature.png" width="532" height="171"
-        alt="Signature of Avanish Singh" loading="lazy" decoding="async">
+      <!-- =============================================================
+           3 · JOURNEY — alternating timeline (navy)
+           ============================================================= -->
+      <section class="journey navy sec" id="record" aria-labelledby="record-h">
+        <h2 id="record-h" class="d-m" data-r="lines">Two decades, one direction.</h2>
+        <p class="legend b-s" data-r="fade" aria-hidden="true"><span><i></i>Education</span><span><i class="on"></i>Career</span></p>
 
-      <blockquote class="mantra reveal">
-        <p><span class="mantra__word">Speed.</span><span class="mantra__word">Quality.</span></p>
-        <cite class="mantra__cap">His success mantra</cite>
-      </blockquote>
-
-      <ul class="values reveal" aria-label="Values">
-        <li>Trust</li>
-        <li>Loyalty</li>
-        <li>Transparency</li>
-        <li>Heart-to-heart</li>
-      </ul>
-    </section>
-
-    <!-- 3 · JOURNEY -->
-    <section class="section" id="journey" aria-labelledby="journeyTitle">
-      <p class="label reveal">The Journey</p>
-      <h2 class="heading reveal" id="journeyTitle">Two decades, one direction.</h2>
-      <p class="legend reveal" aria-hidden="true"><span><i></i>Education</span><span><i class="on"></i>Career</span></p>
-
-      <!-- Circle size (--s) grows with seniority, 48px up to the 64px current-role ring -->
-      <ol class="timeline">
-        <li class="stop stop--left is-edu reveal" style="--s:48px">
-          <button class="stop__circle" type="button" data-card data-range="2000 – 2003"
-            data-title="Diploma, Mechanical Engineering" data-meta="IERT Allahabad"
-            data-detail="Where his engineering foundation began."
-            aria-label="2000 to 2003, Education: Diploma, Mechanical Engineering, IERT Allahabad. Open details."><span
-              class="yr">2000</span><span class="yr2">–03</span></button>
-          <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
-          <div class="stop__text">
-            <p class="stop__type">Education</p>
-            <p class="stop__role">Diploma, Mechanical Engineering</p>
-            <p class="stop__org">IERT Allahabad</p>
-          </div>
-        </li>
-
-        <li class="stop stop--right is-career reveal" style="--s:48px">
-          <!-- TODO: detail line for the Lenovo role -->
-          <button class="stop__circle" type="button" data-card data-range="Mar 2007 – Aug 2008"
-            data-title="Team Lead, Sourcing" data-meta="Lenovo Group · Puducherry · 1 yr 6 mo"
-            aria-label="2007, Career: Team Lead, Sourcing, Lenovo Group, Puducherry. Open details."><span
-              class="yr">2007</span></button>
-          <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
-          <div class="stop__text">
-            <p class="stop__type">Career</p>
-            <p class="stop__role">Team Lead, Sourcing</p>
-            <p class="stop__org">Lenovo Group · Puducherry</p>
-          </div>
-        </li>
-
-        <li class="stop stop--left is-career reveal" style="--s:50px">
-          <!-- TODO: detail line for the Videocon role -->
-          <button class="stop__circle" type="button" data-card data-range="Oct 2008 – Jan 2010"
-            data-title="Asst. Manager, Sourcing"
-            data-meta="Videocon Consumer Durables · Kashipur · 1 yr 4 mo"
-            aria-label="2008, Career: Asst. Manager, Sourcing, Videocon Consumer Durables, Kashipur. Open details."><span
-              class="yr">2008</span></button>
-          <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
-          <div class="stop__text">
-            <p class="stop__type">Career</p>
-            <p class="stop__role">Asst. Manager, Sourcing</p>
-            <p class="stop__org">Videocon Consumer Durables · Kashipur</p>
-          </div>
-        </li>
-
-        <li class="stop stop--right is-career reveal" style="--s:52px">
-          <!-- TODO: detail line for the Seaga India role -->
-          <button class="stop__circle" type="button" data-card data-range="Feb – May 2010"
-            data-title="Sr. Manager, Purchase" data-meta="Seaga India · Bahadurgarh · 4 mo"
-            aria-label="2010, Career: Sr. Manager, Purchase, Seaga India, Bahadurgarh. Open details."><span
-              class="yr">2010</span></button>
-          <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
-          <div class="stop__text">
-            <p class="stop__type">Career</p>
-            <p class="stop__role">Sr. Manager, Purchase</p>
-            <p class="stop__org">Seaga India · Bahadurgarh</p>
-          </div>
-        </li>
-
-        <!-- Parallel tracks: SCM Head (2010) and MBA (2010–12) ran side by side -->
-        <li class="stop stop--pair reveal" style="--s:56px">
-          <span class="stop__dot" aria-hidden="true"></span>
-          <span class="stop__conn stop__conn--l" aria-hidden="true"></span>
-          <span class="stop__conn stop__conn--r" aria-hidden="true"></span>
-          <div class="track track--l is-career">
-            <button class="stop__circle" type="button" data-card data-range="Jun 2010 – Jul 2018"
-              data-title="SCM Head" data-meta="DCJ Group · New Delhi · 8 yrs 2 mo"
-              data-detail="Led supply chain across Ajay Poly, Encraft and Ajay Industrial Polymers."
-              aria-label="2010, Career: SCM Head, DCJ Group, New Delhi. Open details."><span
-                class="yr">2010</span></button>
-            <div>
-              <p class="stop__type">Career</p>
-              <p class="stop__role">SCM Head</p>
+        <!-- Tap a circle for the card. Chronological; stops alternate sides of the gold spine. -->
+        <ol class="timeline" role="list">
+          <li class="stop stop--left is-edu" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="2000 – 2003" data-title="Diploma, Mechanical Engineering" data-meta="IERT Allahabad" aria-label="2000 to 2003, Education: Diploma, Mechanical Engineering, IERT Allahabad. Open details."><span class="yr">2000</span><span class="yr2">–03</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Education</p>
+              <h3 class="stop__role">Diploma, Mechanical Engineering</h3>
+              <p class="stop__org">IERT Allahabad</p>
+            </div>
+          </li>
+          <li class="stop stop--right is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Jul 2003 – Oct 2005" data-title="Technical Officer" data-meta="Mahindra &amp; Mahindra" aria-label="Jul 2003 to Oct 2005, Career: Technical Officer, Mahindra and Mahindra. Open details."><span class="yr">2003</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">Technical Officer</h3>
+              <p class="stop__org">Mahindra &amp; Mahindra</p>
+            </div>
+          </li>
+          <li class="stop stop--left is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Oct 2005 – Feb 2007" data-title="Engineer, Materials" data-meta="Eicher Tractors" aria-label="Oct 2005 to Feb 2007, Career: Engineer, Materials, Eicher Tractors. Open details."><span class="yr">2005</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">Engineer, Materials</h3>
+              <p class="stop__org">Eicher Tractors</p>
+            </div>
+          </li>
+          <li class="stop stop--right is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Mar 2007 – Aug 2008" data-title="Team Lead, Sourcing" data-meta="Lenovo Group · Puducherry · 1 yr 6 mo" aria-label="Mar 2007 to Aug 2008, Career: Team Lead, Sourcing, Lenovo, Puducherry. Open details."><span class="yr">2007</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">Team Lead, Sourcing</h3>
+              <p class="stop__org">Lenovo · Puducherry</p>
+            </div>
+          </li>
+          <li class="stop stop--left is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Oct 2008 – Jan 2010" data-title="Asst. Manager, Sourcing" data-meta="Videocon Consumer Durables · Kashipur · 1 yr 4 mo" aria-label="Oct 2008 to Jan 2010, Career: Asst. Manager, Sourcing, Videocon, Kashipur. Open details."><span class="yr">2008</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">Asst. Manager, Sourcing</h3>
+              <p class="stop__org">Videocon · Kashipur</p>
+            </div>
+          </li>
+          <li class="stop stop--right is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Feb – May 2010" data-title="Sr. Manager, Purchase" data-meta="Seaga India · Bahadurgarh · 4 mo" aria-label="Feb to May 2010, Career: Sr. Manager, Purchase, Seaga India, Bahadurgarh. Open details."><span class="yr">2010</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">Sr. Manager, Purchase</h3>
+              <p class="stop__org">Seaga India · Bahadurgarh</p>
+            </div>
+          </li>
+          <!-- FACT: "13 plants" and "a team of 15" come from a single, undated mention; client to confirm -->
+          <li class="stop stop--left is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Jun 2010 – Jul 2018" data-title="SCM Head" data-meta="DCJ Group · New Delhi · 8 yrs 2 mo" data-detail="Ran supply chain for 13 plants across Ajay Poly, Encraft and Ajay Industrial Polymers, with a team of 15." aria-label="Jun 2010 to Jul 2018, Career: SCM Head, DCJ Group, New Delhi. Open details."><span class="yr">2010</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">SCM Head</h3>
               <p class="stop__org">DCJ Group · New Delhi</p>
             </div>
-          </div>
-          <div class="track track--r is-edu">
-            <button class="stop__circle" type="button" data-card data-range="2010 – 2012"
-              data-title="MBA, Logistics, Materials &amp; SCM" data-meta="EIILM University"
-              data-detail="Completed while leading the group's supply chain."
-              aria-label="2010 to 2012, Education: MBA, Logistics, Materials and SCM, EIILM University. Open details."><span
-                class="yr">2010</span><span class="yr2">–12</span></button>
-            <div>
-              <p class="stop__type">Education</p>
-              <p class="stop__role">MBA, Logistics, Materials &amp; SCM</p>
+          </li>
+          <li class="stop stop--right is-edu" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="2010 – 2012" data-title="MBA, Logistics, Materials &amp; SCM" data-meta="EIILM University" aria-label="2010 to 2012, Education: MBA, Logistics, Materials and SCM, EIILM University. Open details."><span class="yr">2010</span><span class="yr2">–12</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Education</p>
+              <h3 class="stop__role">MBA, Logistics, Materials &amp; SCM</h3>
               <p class="stop__org">EIILM University</p>
             </div>
-          </div>
-        </li>
+          </li>
+          <li class="stop stop--left is-career" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Aug 2018 – Jun 2020" data-title="CEO" data-meta="Encraft India Pvt. Ltd." data-detail="Encraft named Best Manufacturer of uPVC Doors &amp; Windows Profile Systems by Worldwide Achievers, 2018–19." aria-label="Aug 2018 to Jun 2020, Career: CEO, Encraft India Pvt. Ltd.. Open details."><span class="yr">2018</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">CEO</h3>
+              <p class="stop__org">Encraft India Pvt. Ltd.</p>
+            </div>
+          </li>
+          <!-- FACT: the site dates the CEO role from Jun 2020 but not the Director appointment; client to confirm -->
+          <li class="stop stop--right is-career is-now" data-r="stop">
+            <button class="stop__circle press" type="button" data-card data-range="Jun 2020 – present" data-title="Director &amp; CEO" data-meta="DCJ Group · APPL, Encraft, Enzocraft" aria-label="Jun 2020 to present, Career: Director and CEO, DCJ Group. Open details."><span class="yr">2020</span></button>
+            <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
+            <div class="stop__text">
+              <p class="stop__type caps">Career</p>
+              <h3 class="stop__role">Director &amp; CEO</h3>
+              <p class="stop__org">DCJ Group</p>
+            </div>
+          </li>
+        </ol>
 
-        <li class="stop stop--left is-career reveal" style="--s:60px">
-          <button class="stop__circle" type="button" data-card data-range="Aug 2018 – Jun 2020" data-title="CEO"
-            data-meta="Encraft India Pvt. Ltd."
-            data-detail="Encraft named Best Manufacturer of uPVC Doors &amp; Windows Profile Systems, 2019."
-            aria-label="2018, Career: CEO, Encraft India Pvt. Ltd. Open details."><span
-              class="yr">2018</span></button>
-          <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
-          <div class="stop__text">
-            <p class="stop__type">Career</p>
-            <p class="stop__role">CEO</p>
-            <p class="stop__org">Encraft India Pvt. Ltd.</p>
-          </div>
-        </li>
-
-        <li class="stop stop--right is-career is-current reveal" style="--s:64px">
-          <button class="stop__circle" type="button" data-card data-range="Jun 2020 – present"
-            data-title="Director &amp; CEO" data-meta="DCJ Group" data-detail="Leads APPL, Encraft and Enzocraft."
-            aria-label="2020, Career, current role: Director and CEO, DCJ Group. Open details."><span
-              class="yr">2020</span></button>
-          <span class="stop__dot" aria-hidden="true"></span><span class="stop__conn" aria-hidden="true"></span>
-          <div class="stop__text">
-            <p class="stop__type">Career</p>
-            <p class="stop__role">Director &amp; CEO</p>
-            <p class="stop__org">DCJ Group</p>
-          </div>
-        </li>
-      </ol>
-
-      <div class="journey__close reveal">
-        <p><span class="journey__num">16</span><span class="journey__words">years. One group.</span></p>
-      </div>
-    </section>
-
-    <!-- 4 · HONOURS -->
-    <section class="section" id="honours" aria-labelledby="honoursTitle">
-      <p class="label reveal">Honours</p>
-      <h2 class="heading reveal" id="honoursTitle">Recognised by the nation. Earned with the team.</h2>
-
-      <!-- Part A: top 5 (stacked list for now; pinned spotlight comes later).
-           Photos: drop images/awards/N.webp in place. Until then the card shows a labelled placeholder. -->
-      <ol class="awards">
-        <li class="reveal"><button class="award" type="button" data-card data-photo="images/awards/1.webp" data-n="1"
-            data-range="2025" data-title="Atal Youth Icon"
-            data-meta="National Atal Award Ceremony · Keynote on Make in India, PM Museum">
-            <span class="award__year" aria-hidden="true">2025</span>
-            <span class="award__name">Atal Youth Icon</span>
-            <span class="award__by">National Atal Award Ceremony</span>
-            <span class="award__ctx">Keynote on Make in India, PM Museum</span>
-            <span class="award__hint">Tap for photo</span>
-          </button></li>
-        <li class="reveal"><button class="award" type="button" data-card data-photo="images/awards/2.webp" data-n="2"
-            data-range="2024" data-title="Atal Udyog Ratna" data-meta="Atal Foundation">
-            <span class="award__year" aria-hidden="true">2024</span>
-            <span class="award__name">Atal Udyog Ratna</span>
-            <span class="award__by">Atal Foundation</span>
-          </button></li>
-        <li class="reveal"><button class="award" type="button" data-card data-photo="images/awards/3.webp" data-n="3"
-            data-range="2024" data-title="Global 2000 Inspirational Leaders" data-meta="Best of Asia">
-            <span class="award__year" aria-hidden="true">2024</span>
-            <span class="award__name">Global 2000 Inspirational Leaders</span>
-            <span class="award__by">Best of Asia</span>
-          </button></li>
-        <li class="reveal"><button class="award" type="button" data-card data-photo="images/awards/4.webp" data-n="4"
-            data-range="2022" data-title="India's Most Trusted CEO" data-meta="WCRC Leaders">
-            <span class="award__year" aria-hidden="true">2022</span>
-            <span class="award__name">India's Most Trusted CEO</span>
-            <span class="award__by">WCRC Leaders</span>
-          </button></li>
-        <li class="reveal"><button class="award" type="button" data-card data-photo="images/awards/5.webp" data-n="5"
-            data-range="2024" data-title="Best uPVC Brand, 4th year running"
-            data-meta="Presented by the HUDCO Chairman · Encraft">
-            <span class="award__year" aria-hidden="true">2024</span>
-            <span class="award__name">Best uPVC Brand, 4th year running</span>
-            <span class="award__by">Presented by the HUDCO Chairman</span>
-            <span class="award__ctx">Encraft</span>
-          </button></li>
-      </ol>
-
-      <!-- Part B: honour roll marquee. Tap (or Enter) pauses both rows. -->
-      <div class="marquee reveal" id="marquee" role="group" tabindex="0"
-        aria-label="Honour roll. Tap or press Enter to pause or resume.">
-        <div class="marquee__row marquee__row--personal">
-          <ul class="marquee__track" aria-label="Personal awards">
-            <li>Inspirational Leaders of Asia 2022</li>
-            <li>Business Leader of the Year 2021</li>
-            <li>Most Admired Global Indians 2020</li>
-            <li>Times SME Icons 2020</li>
-            <li>Trusted CEO 2020–21</li>
-            <li>Fastest Growing Leader 2018–19</li>
-            <li>IDEA Excellence Award 2024</li>
-            <li>Most Successful CEO 2019</li>
-          </ul>
+        <div class="journey__close" data-r="fade">
+          <p class="journey__line">16 years. One group.</p>
         </div>
-        <div class="marquee__row marquee__row--company">
-          <ul class="marquee__track" aria-label="Company awards">
-            <li>Best Quality Award 2025</li>
-            <li>LG Silver Award 2025</li>
-            <li>Best Use of Technology, Uttarakhand 2024</li>
-            <li>Best of Asia Most Trusted Brand 2022</li>
-            <li>India CSR Awards 2021</li>
-            <li>CII SMB Star Icon 2020</li>
-            <li>India's Most Trusted Brand 2021–22</li>
-            <li>Best Manufacturer uPVC Profile Systems 2019</li>
-          </ul>
+
+      </section>
+
+      <!-- =============================================================
+           4 · HONOURS (ivory)
+           ============================================================= -->
+      <section class="honours ivory sec" id="honours" aria-labelledby="honours-h">
+        <!-- COPY honours.heading: ≤ 6 words, must carry the count (group-wide scope) -->
+        <h2 id="honours-h" class="d-m" data-r="lines">30+ group-wide honours since 2018.</h2>
+
+        <div class="featured">
+          <span class="featured__glow" data-r="glow" aria-hidden="true"></span>
+          <!-- COPY honours.featured.year -->
+          <p class="featured__year d-s num" data-r="lines"><time datetime="2025">2025</time></p>
+          <!-- COPY honours.featured.name: ≤ 3 words, one line -->
+          <h3 class="featured__name d-l" data-r="lines">Atal Youth Icon</h3>
+          <!-- COPY honours.featured.context: ≤ 24 words -->
+          <p class="featured__ctx" data-r="fade">Young World Entrepreneur Atal Icon Award, at the Prime Minister Museum, where he gave a keynote on Make in&nbsp;India.</p>
         </div>
-      </div>
 
-      <!-- Part C -->
-      <div class="thirty reveal">
-        <p class="thirty__num">30+</p>
-        <p class="thirty__cap">honours since 2018</p>
-        <a class="thirty__link" href="https://avanishsinghvisen.com/awards" target="_blank" rel="noopener">View all on
-          avanishsinghvisen.com →</a>
-      </div>
-    </section>
-  </main>
+        <!-- COPY honours.rows ×4, newest first: year; name ≤ 40; presenter · recipient ≤ 32 -->
+        <ul class="hlist" role="list">
+          <!-- COPY honours.row1 -->
+          <li class="hitem">
+            <span class="rule" data-r="rule" aria-hidden="true"></span>
+            <div class="hrow" data-r="fade">
+              <p class="hrow__year d-s num"><time datetime="2025">2025</time></p>
+              <div>
+                <p class="hrow__name d-s">Best Quality Award</p>
+                <p class="hrow__by b-s">Haier India · APPL</p>
+              </div>
+            </div>
+          </li>
+          <!-- COPY honours.row2 -->
+          <li class="hitem">
+            <span class="rule" data-r="rule" aria-hidden="true"></span>
+            <div class="hrow" data-r="fade">
+              <p class="hrow__year d-s num"><time datetime="2025">2025</time></p>
+              <div>
+                <p class="hrow__name d-s">Silver Award, Best Raw Materials Support</p>
+                <p class="hrow__by b-s">LG · APPL</p>
+              </div>
+            </div>
+          </li>
+          <!-- COPY honours.row3 -->
+          <li class="hitem">
+            <span class="rule" data-r="rule" aria-hidden="true"></span>
+            <div class="hrow" data-r="fade">
+              <p class="hrow__year d-s num"><time datetime="2024">2024</time></p>
+              <div>
+                <p class="hrow__name d-s">Best Use of Technology, Doors &amp; Windows</p>
+                <p class="hrow__by b-s">Uttarakhand CM · Encraft</p>
+              </div>
+            </div>
+          </li>
+          <!-- COPY honours.row4 -->
+          <li class="hitem">
+            <span class="rule" data-r="rule" aria-hidden="true"></span>
+            <div class="hrow" data-r="fade">
+              <p class="hrow__year d-s num"><time datetime="2022">2022</time></p>
+              <div>
+                <p class="hrow__name d-s">India’s Most Trusted CEO</p>
+                <p class="hrow__by b-s">WCRC Leaders · Personal</p>
+              </div>
+            </div>
+          </li>
 
-  <!-- 5 · CONTACT + FOOTER -->
-  <footer id="footer" aria-labelledby="footerTitle">
-    <p class="label reveal">Connect</p>
-    <h2 class="heading reveal" id="footerTitle">Let's talk.</h2>
+          <li class="hitem">
+            <span class="rule" data-r="rule" aria-hidden="true"></span>
+            <!-- COPY honours.button: the count MUST equal the number of .full__item entries below (32) -->
+            <button class="more press" type="button" aria-expanded="false" aria-controls="honours-full" data-r="fade">
+              <span>32 honours, 2018–2025</span>
+              <span class="more__x" aria-hidden="true"></span>
+            </button>
 
-    <div class="contact__row reveal">
-      <a class="contact__btn" href="tel:+911140922210"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-        </svg>Call</a>
-      <a class="contact__btn" href="mailto:info@avanishsinghvisen.com"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect width="20" height="16" x="2" y="4" rx="2" />
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-        </svg>Email</a>
-      <a class="contact__btn"
-        href="https://www.google.com/maps/search/?api=1&query=70%2C%20Okhla%20Industrial%20Estate%2C%20Phase%20III%2C%20New%20Delhi%20110020"
-        target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-          <circle cx="12" cy="10" r="3" />
-        </svg>Directions</a>
-    </div>
-    <p class="contact__hours reveal">Mon–Fri, 9 am – 6 pm</p>
-    <button class="btn btn--primary contact__save reveal" type="button" data-save-contact><svg viewBox="0 0 24 24"
-        aria-hidden="true">
-        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <line x1="19" x2="19" y1="8" y2="14" />
-        <line x1="22" x2="16" y1="11" y2="11" />
-      </svg>Save contact</button>
+            <!-- COPY honours.full: grouped by year, newest first. Title ≤ 48, by-line ≤ 28 ("Presenter · Recipient" or "Recipient").
+                 data-kind = personal | company. 32 items: 12 personal, 20 company. -->
+            <div class="full" id="honours-full" hidden>
+              <div class="full__inner">
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2025</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">Young World Entrepreneur Atal Icon Award</p><p class="full__by b-s">PM Museum · Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best Quality Award</p><p class="full__by b-s">Haier India · APPL</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Silver Award, Best Raw Materials Support</p><p class="full__by b-s">LG · APPL</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best Brand in Construction &amp; Infrastructure</p><p class="full__by b-s">Encraft</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2024</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">Atal Udyog Ratna Award</p><p class="full__by b-s">Personal</p></li>
+                    <li class="full__item" data-kind="personal"><p class="full__title">Global 2000 Inspirational Leaders</p><p class="full__by b-s">Personal</p></li>
+                    <li class="full__item" data-kind="personal"><p class="full__title">Idea Excellence Award</p><p class="full__by b-s">Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best uPVC Brand, Construction &amp; Infrastructure</p><p class="full__by b-s">HUDCO Chairman · Encraft</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best Use of Technology, Doors &amp; Windows</p><p class="full__by b-s">Uttarakhand CM · Encraft</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Appreciation for Environment, Health &amp; Safety</p><p class="full__by b-s">Samsung · APPL</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2022</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">India’s Most Trusted CEO</p><p class="full__by b-s">WCRC Leaders · Personal</p></li>
+                    <li class="full__item" data-kind="personal"><p class="full__title">Inspirational Leaders of Asia</p><p class="full__by b-s">White Page · Personal</p></li>
+                    <!-- FACT: White Page brand awards (here and 2019): Encraft or DCJ Group? -->
+                    <li class="full__item" data-kind="company"><p class="full__title">Best of Asia: Most Trusted Brand</p><p class="full__by b-s">White Page · DCJ Group</p></li>
+                    <!-- FACT: Incredible Brand year, 2021 or 2022? -->
+                    <li class="full__item" data-kind="company"><p class="full__title">Incredible Brand</p><p class="full__by b-s">Zee Business · Encraft</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Haier North Industrial Park Award</p><p class="full__by b-s">Haier · APPL</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best Cost Performance Award</p><p class="full__by b-s">LG · APPL</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2021</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">Business Leader of the Year</p><p class="full__by b-s">Personal</p></li>
+                    <li class="full__item" data-kind="personal"><p class="full__title">India’s Inspirational Leader</p><p class="full__by b-s">Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Top 10 COVID-19 CSR Initiatives of the Year</p><p class="full__by b-s">India CSR Awards · DCJ Group</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best uPVC Windows &amp; Doors Manufacturer</p><p class="full__by b-s">Encraft</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best Building Material &amp; Fitting Brand</p><p class="full__by b-s">Encraft</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2020–21</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">Trusted CEO</p><p class="full__by b-s">WCRC Leaders · Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">India’s Inspirational Brand</p><p class="full__by b-s">WCRC International · Encraft</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2020</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">The Most Admired Global Indians</p><p class="full__by b-s">Passion Vista · Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Times SME Icons</p><p class="full__by b-s">Encraft</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2019</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">Most Successful CEO</p><p class="full__by b-s">White Page · Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Most Trusted Brand</p><p class="full__by b-s">White Page · DCJ Group</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Award for Quality</p><p class="full__by b-s">Godrej · APPL</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Award for Fast Product Development</p><p class="full__by b-s">Godrej · APPL</p></li>
+                  </ul>
+                </div>
+                <div class="full__group">
+                  <h3 class="full__year d-s num">2018–19</h3>
+                  <ul role="list">
+                    <li class="full__item" data-kind="personal"><p class="full__title">Fastest Growing Leaders</p><p class="full__by b-s">Asia One · Personal</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Best Manufacturer, uPVC Door &amp; Window Profiles</p><p class="full__by b-s">Encraft</p></li>
+                    <li class="full__item" data-kind="company"><p class="full__title">Fastest Growing Brands</p><p class="full__by b-s">Asia One · Encraft</p></li>
+                  </ul>
+                </div>
 
-    <!-- TODO (later pass): morphing SVG blobs + gold dust particles -->
+                <!-- COPY honours.photosLink -->
+                <a class="full__link" href="https://avanishsinghvisen.com/awards" target="_blank" rel="noopener">More honours and photos on avanishsinghvisen.com
+                  <svg class="i16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.3" /></svg><span class="sr-only">(opens in a new tab)</span></a>
+              </div>
+            </div>
+            <span class="rule hlist__end" data-r="rule" aria-hidden="true"></span>
+          </li>
+        </ul>
+      </section>
 
-    <div class="footer__socials reveal">
-      <a href="https://www.linkedin.com/in/avanish-visen-b0bb325/" class="footer__social-btn" target="_blank"
-        rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-          <rect width="4" height="12" x="2" y="9" />
-          <circle cx="4" cy="4" r="2" />
-        </svg></a>
-      <a href="https://www.instagram.com/avanishsinghvisen1/" class="footer__social-btn" target="_blank"
-        rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-        </svg></a>
-      <a href="https://www.facebook.com/VisenAvanishSingh" class="footer__social-btn" target="_blank" rel="noopener"
-        aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-        </svg></a>
-      <a href="https://www.youtube.com/@AvanishSinghVisen" class="footer__social-btn" target="_blank" rel="noopener"
-        aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-          <path d="m10 15 5-3-5-3z" />
-        </svg></a>
-    </div>
+    </main>
 
-    <p class="footer__companies reveal">
-      <a href="https://www.encraft.in/" target="_blank" rel="noopener">Encraft</a><span aria-hidden="true">·</span>
-      <a href="https://www.applindia.co.in/" target="_blank" rel="noopener">APPL</a><span aria-hidden="true">·</span>
-      <a href="https://enzocraft.in/" target="_blank" rel="noopener">Enzocraft</a>
-    </p>
-    <p class="footer__signoff reveal">Speed. Quality.</p>
-    <p class="footer__copyright">© 2026 Avanish Singh Visen</p>
-  </footer>
+    <!-- =============================================================
+         5 · CONTACT + FOOTER (navy)
+         Monogram traced from images/logo.png (the source is blue on white; here it is set in gold).
+         ============================================================= -->
+    <footer class="contact navy" id="contact" aria-labelledby="contact-h">
+      <span class="foot__glow" aria-hidden="true"></span>
+      <svg class="foot__mark" viewBox="50 80 1152 916" aria-hidden="true">
+        <defs>
+          <linearGradient id="markEdge" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#C4973A" stop-opacity=".05" />
+            <stop offset=".55" stop-color="#E5C16A" stop-opacity=".55" />
+            <stop offset="1" stop-color="#C4973A" stop-opacity=".15" />
+          </linearGradient>
+        </defs>
+        <path d="M 626 82 L 626 82 621 89 L 616 96 579 150 L 543 204 521 236 L 500 267 479 298 L 459 328 389 432 L 319 537 317 540 L 315 543 393 542 L 471 542 480 528 L 490 513 513 478 L 536 443 545 430 L 553 416 589 361 L 625 305 626 305 L 627 305 647 336 L 668 368 690 402 L 712 436 747 489 L 782 543 859 543 L 937 543 937 542 L 937 541 909 500 L 881 458 840 398 L 800 337 775 301 L 751 264 732 236 L 713 208 705 196 L 696 184 666 139 L 635 94 631 88 L 627 82 626 82 M 302 576 L 302 576 297 584 L 292 592 271 627 L 251 661 236 686 L 221 711 180 780 L 139 848 108 899 L 77 950 65 970 L 53 990 53 991 L 52 993 128 992 L 204 992 215 974 L 227 955 271 882 L 315 809 350 751 L 385 693 381 687 L 377 681 340 628 L 303 576 302 576 M 950 577 L 950 577 947 580 L 945 583 932 601 L 920 618 894 655 L 868 691 868 692 L 867 693 903 752 L 938 811 992 901 L 1046 992 1071 992 L 1097 992 1148 992 L 1199 993 1199 992 L 1199 991 1179 958 L 1159 926 1125 869 L 1090 811 1063 765 L 1035 719 1021 695 L 1007 671 984 633 L 961 594 956 585 L 951 577 950 577 M 521 584 L 520 584 461 584 L 403 585 403 585 L 403 586 417 608 L 432 630 449 657 L 467 683 546 802 L 625 920 626 920 L 626 920 656 877 L 685 833 740 751 L 795 668 823 626 L 851 584 851 584 L 851 584 792 584 L 733 584 730 587 L 727 591 677 667 L 627 742 626 742 L 625 742 607 714 L 589 687 560 642 L 530 598 526 591 L 522 585 521 584" fill="rgba(250,247,242,.035)" stroke="url(#markEdge)" stroke-width="4" stroke-linejoin="miter" />
+      </svg>
 
-  <!-- Shared expand card (Journey + Honours). TODO (later pass): FLIP from the tapped circle -->
+      <svg class="foot__logo" viewBox="50 80 1152 916" role="img" aria-label="Avanish Singh Visen monogram" data-r="fade">
+        <defs>
+          <linearGradient id="markGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E5C16A" />
+            <stop offset=".5" stop-color="#C4973A" />
+            <stop offset="1" stop-color="#E5C16A" />
+          </linearGradient>
+        </defs>
+        <path d="M 626 82 L 626 82 621 89 L 616 96 579 150 L 543 204 521 236 L 500 267 479 298 L 459 328 389 432 L 319 537 317 540 L 315 543 393 542 L 471 542 480 528 L 490 513 513 478 L 536 443 545 430 L 553 416 589 361 L 625 305 626 305 L 627 305 647 336 L 668 368 690 402 L 712 436 747 489 L 782 543 859 543 L 937 543 937 542 L 937 541 909 500 L 881 458 840 398 L 800 337 775 301 L 751 264 732 236 L 713 208 705 196 L 696 184 666 139 L 635 94 631 88 L 627 82 626 82 M 302 576 L 302 576 297 584 L 292 592 271 627 L 251 661 236 686 L 221 711 180 780 L 139 848 108 899 L 77 950 65 970 L 53 990 53 991 L 52 993 128 992 L 204 992 215 974 L 227 955 271 882 L 315 809 350 751 L 385 693 381 687 L 377 681 340 628 L 303 576 302 576 M 950 577 L 950 577 947 580 L 945 583 932 601 L 920 618 894 655 L 868 691 868 692 L 867 693 903 752 L 938 811 992 901 L 1046 992 1071 992 L 1097 992 1148 992 L 1199 993 1199 992 L 1199 991 1179 958 L 1159 926 1125 869 L 1090 811 1063 765 L 1035 719 1021 695 L 1007 671 984 633 L 961 594 956 585 L 951 577 950 577 M 521 584 L 520 584 461 584 L 403 585 403 585 L 403 586 417 608 L 432 630 449 657 L 467 683 546 802 L 625 920 626 920 L 626 920 656 877 L 685 833 740 751 L 795 668 823 626 L 851 584 851 584 L 851 584 792 584 L 733 584 730 587 L 727 591 677 667 L 627 742 626 742 L 625 742 607 714 L 589 687 560 642 L 530 598 526 591 L 522 585 521 584" fill="url(#markGold)" />
+      </svg>
+
+      <p class="foot__label" data-r="fade">Let&rsquo;s connect</p>
+      <h2 id="contact-h" class="foot__h" data-r="fade">Building Relationships.<span>Creating Impact.</span></h2>
+      <p class="foot__lede" data-r="fade">I&rsquo;m always open to conversations, collaborations and new opportunities.</p>
+
+      <a class="mailcard press" href="mailto:info@avanishsinghvisen.com" data-r="fade">
+        <span class="mailcard__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg></span>
+        <span class="mailcard__txt"><span class="mailcard__k">Get in touch</span><span class="mailcard__v">info@avanishsinghvisen.com</span></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+      </a>
+
+      <span class="foot__rule" aria-hidden="true"></span>
+
+      <ul class="socials" role="list" data-r="fade">
+        <li><a class="press" href="https://www.linkedin.com/in/avanish-visen-b0bb325/" target="_blank" rel="noopener" aria-label="Avanish Singh Visen on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.9 8.8H3.6V20h3.3zM5.2 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.6c0-3-1.6-5-4.4-5-1.5 0-2.5.8-2.9 1.6V8.8H9.9V20h3.3v-5.6c0-1.5.3-2.9 2.1-2.9s1.8 1.7 1.8 3V20h3.3z" /></svg></a></li>
+        <li><a class="press" href="https://www.instagram.com/avanishsinghvisen1/" target="_blank" rel="noopener" aria-label="Avanish Singh Visen on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" /></svg></a></li>
+        <li><a class="press" href="https://www.facebook.com/VisenAvanishSingh" target="_blank" rel="noopener" aria-label="Avanish Singh Visen on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.4 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.7v3h2.6V21z" /></svg></a></li>
+        <li><a class="press" href="https://www.youtube.com/@AvanishSinghVisen" target="_blank" rel="noopener" aria-label="Avanish Singh Visen on YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z" /></svg></a></li>
+      </ul>
+
+      <p class="copy" data-r="fade">&copy; 2026 Avanish Singh Visen</p>
+      <p class="copy2" data-r="fade">All rights reserved</p>
+    </footer>
+  </div>
+
+  <!-- Journey tap card (filled from the tapped circle's data-*) -->
   <div class="modal" id="modal" aria-hidden="true">
     <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="mTitle" tabindex="-1">
-      <button class="modal__close" type="button" aria-label="Close">✕</button>
-      <div class="modal__photo" id="mPhoto" hidden></div>
+      <button class="modal__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
       <p class="modal__range" id="mRange"></p>
       <h3 class="modal__title" id="mTitle"></h3>
       <p class="modal__meta" id="mMeta"></p>
@@ -1484,190 +938,857 @@
     </div>
   </div>
 
+  <!-- Assistant button: appears once the visitor starts scrolling; the panel is built on first tap -->
+  <button class="asv-fab press" type="button" aria-label="Ask about Avanish" aria-haspopup="dialog" aria-expanded="false" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.1A8 8 0 1 1 20 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke-width="2.2"/></svg>
+  </button>
+
+  <!-- Email pill: one persistent contact control, never on screen one, hidden at Contact -->
+  <a class="pill press" href="mailto:info@avanishsinghvisen.com" aria-label="Reach out by email: info@avanishsinghvisen.com">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
+    <span>Reach out</span>
+  </a>
+
   <script>
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const hasGsap = !!(window.gsap && window.ScrollTrigger);
-    let lenis = null;
-
-    /* ---- vCard (Blob, no extra file). Spec: footer.md ---- */
-    const VCARD = [
-      'BEGIN:VCARD',
-      'VERSION:3.0',
-      'N:Visen;Avanish Singh;;Mr.;',
-      'FN:Avanish Singh Visen',
-      'ORG:DCJ Group',
-      'TITLE:Director & CEO',
-      'TEL;TYPE=WORK,VOICE:+911140922210',
-      'EMAIL;TYPE=WORK:info@avanishsinghvisen.com',
-      'ADR;TYPE=WORK:;;70, Okhla Industrial Estate, Phase III;New Delhi;;110020;India',
-      'URL:https://avanishsinghvisen.com',
-      'X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/avanish-visen-b0bb325/',
-      'END:VCARD'
-    ].join('\r\n') + '\r\n';
-
-    function saveContact() {
-      const blob = new Blob([VCARD], { type: 'text/vcard;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'avanish-singh-visen.vcf';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 4000);
-    }
-    document.querySelectorAll('[data-save-contact]').forEach(b => b.addEventListener('click', saveContact));
-
-    /* ---- Odometer digits ---- */
-    const REEL_STEPS = 20; // two 0-9 runs, so every digit visibly spins before landing
-    const reels = [];
-    document.querySelectorAll('.stat').forEach(stat => {
-      const value = stat.dataset.value, num = stat.querySelector('.stat__num'), group = [];
-      stat.setAttribute('aria-label', value + ' ' + stat.querySelector('.stat__lbl').textContent.trim());
-      [...value].forEach(ch => {
-        if (/\d/.test(ch)) {
-          const digit = document.createElement('span'), reel = document.createElement('span');
-          digit.className = 'digit'; digit.setAttribute('aria-hidden', 'true');
-          reel.className = 'reel';
-          for (let i = 0; i < REEL_STEPS; i++) reel.insertAdjacentHTML('beforeend', '<i>' + (i % 10) + '</i>');
-          digit.appendChild(reel); num.appendChild(digit);
-          group.push({ reel, end: -(10 + +ch) * (100 / REEL_STEPS) });
-        } else {
-          const s = document.createElement('span');
-          s.className = 'stat__suffix'; s.setAttribute('aria-hidden', 'true'); s.textContent = ch;
-          num.appendChild(s);
-        }
-      });
-      reels.push(group);
-    });
-    const setReelFinal = r => { r.reel.style.transform = 'translateY(' + r.end + '%)'; };
-
-    if (!hasGsap) {
-      reels.flat().forEach(setReelFinal);
-    } else {
-      gsap.registerPlugin(ScrollTrigger);
-      if (window.Lenis && !reduce) {
-        lenis = new Lenis({ lerp: .09, duration: 1.05, smoothWheel: true });
-        lenis.on('scroll', ScrollTrigger.update);
-        gsap.ticker.add(t => lenis.raf(t * 1000));
-        gsap.ticker.lagSmoothing(0);
-      }
-
-      /* ---- Hero ---- */
-      if (reduce) {
-        reels.flat().forEach(setReelFinal);
-        gsap.from(['.hero__photo', '.hero__text', '.hero__bottom'], { opacity: 0, duration: .6, stagger: .12, ease: 'power3.out' });
-      } else {
-        reels.flat().forEach(r => gsap.set(r.reel, { yPercent: 0 }));
-        gsap.set('.hero__photo', { opacity: 0, scale: 1.06 });
-        gsap.set('.hero__line span', { yPercent: 115 });
-        gsap.set('.hero__underline', { scaleX: 0 });
-        gsap.set(['.hero__title', '.hero__actions'], { opacity: 0, y: 16 });
-        gsap.set('.hero__stats', { opacity: 0 });
-
-        gsap.to('.hero__photo', { scale: 1, duration: 20, ease: 'none' }); // slow zoom
-        const tl = gsap.timeline({ delay: .1, defaults: { ease: 'power3.out' } });
-        tl.to('.hero__photo', { opacity: 1, duration: .8, ease: 'power1.out' }, 0)
-          .to('.hero__line span', { yPercent: 0, duration: .4, stagger: .4 }, .25)
-          .to('.hero__underline', { scaleX: 1, duration: .3 }, 1.05)
-          .to('.hero__title', { opacity: 1, y: 0, duration: .4 }, 1.3)
-          .to('.hero__stats', { opacity: 1, duration: .4 }, .8)
-          .to('.hero__actions', { opacity: 1, y: 0, duration: .5 }, 1.6);
-        reels.forEach((group, i) => group.forEach((r, j) =>
-          tl.to(r.reel, { yPercent: r.end, duration: 1.1, ease: 'power3.out' }, .9 + i * .12 + j * .05)));
-      }
-
-      /* ---- Simple reveals: fade + 24px rise, once, at 80% viewport ---- */
-      gsap.utils.toArray('.reveal').forEach(el => gsap.from(el, {
-        scrollTrigger: { trigger: el, start: 'clamp(top 80%)', once: true }, // clamp: items near the page end still fire
-        opacity: 0, y: reduce ? 0 : 24, duration: .6, ease: 'power3.out'
-      }));
-    }
-
-    /* ---- Connect: scroll to footer ---- */
-    document.querySelectorAll('[data-connect]').forEach(a => a.addEventListener('click', e => {
-      e.preventDefault();
-      const f = document.getElementById('footer');
-      if (lenis) lenis.scrollTo(f); else f.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
-    }));
-
-    /* ---- Honour roll marquee ---- */
     (function () {
-      const m = document.getElementById('marquee');
-      // Duplicate each row once (hidden from screen readers) so translateX(-50%) loops seamlessly
-      m.querySelectorAll('.marquee__track').forEach(track => {
-        [...track.children].forEach(li => {
-          const c = li.cloneNode(true);
-          c.setAttribute('aria-hidden', 'true');
-          track.appendChild(c);
+      'use strict';
+      var html = document.documentElement;
+      var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var lenis = null;
+      var $ = function (s, c) { return (c || document).querySelector(s); };
+      var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+      var expoOut = function (t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); };
+      var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+      var refresh = function () { if (window.ScrollTrigger) ScrollTrigger.refresh(); };
+
+      function boot() {
+        window.__asvReady = true;
+        var G = !!(window.gsap && window.ScrollTrigger) && html.classList.contains('js');
+        disclosure();
+        card();
+        if (!G) return fallback();
+        try { init(); } catch (err) { console.error(err); fallback(); }
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+      else boot();
+
+      /* Show everything, statically. Used when GSAP is missing or init throws. */
+      function fallback() {
+        html.classList.remove('js');
+        if (window.ScrollTrigger) ScrollTrigger.getAll().forEach(function (t) { t.kill(); });
+        if (window.gsap) gsap.set($$('[data-r], .ln__i, .hero__img, .hero__portrait, .thread__ink, .sig, .pill'), { clearProps: 'all' });
+        $$('.entry.pending').forEach(function (e) { e.classList.remove('pending'); });
+        var ink = $('.sig__ink'); if (ink) ink.removeAttribute('mask');
+        var sig = $('.sig'); if (sig) sig.classList.remove('sig--wipe');
+        if (lenis) { lenis.destroy(); lenis = null; }
+      }
+
+      /* ---------------------------------------------------------------
+         Line splitter: groups words by offsetTop into masked lines.
+         A visually hidden copy keeps the text whole for screen readers.
+         --------------------------------------------------------------- */
+      function split(el) {
+        if (el._ls) return el._ls;
+        var pre = el.querySelectorAll('.ln__i');
+        if (pre.length) return (el._ls = Array.prototype.slice.call(pre));
+        el._src = el.innerHTML;
+        var words = [];
+        (function walk(node, wrap) {
+          Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+            if (n.nodeType === 3) {
+              n.nodeValue.split(/([ \t\n\r]+)/).forEach(function (t) {
+                if (!t) return;
+                if (/^[ \t\n\r]+$/.test(t)) { words.push(document.createTextNode(' ')); return; }
+                var w = document.createElement('span'); w.className = 'w';
+                if (wrap) { var c = wrap.cloneNode(false); c.textContent = t; w.appendChild(c); } else w.textContent = t;
+                words.push(w);
+              });
+            } else if (n.nodeType === 1) walk(n, n.cloneNode(false));
+          });
+        })(el, null);
+        var text = el.textContent.replace(/\s+/g, ' ').trim();
+        el.textContent = '';
+        words.forEach(function (w) { el.appendChild(w); });
+        var lines = [], top = null, cur = null;
+        words.forEach(function (w) {
+          if (w.nodeType !== 1) { if (cur) cur.push(w); return; }
+          var t = w.offsetTop;
+          if (top === null || Math.abs(t - top) > 3) { cur = []; lines.push(cur); top = t; }
+          cur.push(w);
         });
-      });
-      const toggle = () => m.classList.toggle('is-paused');
-      m.addEventListener('click', toggle);
-      m.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
-      });
-      // Pause while off-screen
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver(([e]) => m.classList.toggle('is-off', !e.isIntersecting)).observe(m);
+        el.textContent = '';
+        var sr = document.createElement('span'); sr.className = 'sr-only'; sr.textContent = text;
+        var vis = document.createElement('span'); vis.className = 'lns'; vis.setAttribute('aria-hidden', 'true');
+        lines.forEach(function (ws) {
+          var ln = document.createElement('span'); ln.className = 'ln';
+          var inner = document.createElement('span'); inner.className = 'ln__i';
+          ws.forEach(function (w) { inner.appendChild(w); });
+          ln.appendChild(inner); vis.appendChild(ln);
+        });
+        el.appendChild(sr); el.appendChild(vis);
+        return (el._ls = Array.prototype.slice.call(vis.querySelectorAll('.ln__i')));
+      }
+      function unsplit(el) {
+        if (el._src == null) return;
+        el.innerHTML = el._src; el._src = null; el._ls = null;
+      }
+
+      /* ---------------------------------------------------------------
+         Reveal primitives (reduced motion: opacity-only, 0.4s)
+         --------------------------------------------------------------- */
+      var building = null;
+      function list(x) { return [].concat(x).filter(Boolean); }
+
+      function linesTo(tl, els, pos, o) {
+        o = o || {}; els = list(els); if (!els.length) return;
+        if (RM) { tl.to(els, { opacity: 1, duration: .4, ease: 'none' }, pos); return; }
+        var ls = [];
+        els.forEach(function (el) { ls = ls.concat(split(el)); if (building) building.splits.push(el); });
+        gsap.set(ls, { yPercent: 105 });
+        gsap.set(els, { opacity: 1 });
+        tl.to(ls, { yPercent: 0, duration: o.d || .9, ease: 'expo.out', stagger: o.s == null ? .08 : o.s }, pos);
+      }
+      function fadeTo(tl, els, pos, o) {
+        o = o || {}; els = list(els); if (!els.length) return;
+        if (RM) { tl.to(els, { opacity: 1, duration: .4, ease: 'none', stagger: (o.s || 0) / 2 }, pos); return; }
+        var y = o.y == null ? 12 : o.y;
+        var from = { opacity: 0 }, to = { opacity: 1, duration: o.d || .6, ease: o.e || 'expo.out', stagger: o.s || 0 };
+        if (y) { from.y = y; to.y = 0; to.clearProps = 'transform'; }
+        gsap.set(els, from);
+        tl.to(els, to, pos);
+      }
+      function ruleTo(tl, els, pos, o) {
+        o = o || {}; els = list(els); if (!els.length) return;
+        if (RM) { gsap.set(els, { opacity: 1 }); return; }
+        gsap.set(els, { opacity: 1, scaleX: 0, transformOrigin: '0% 50%' });
+        tl.to(els, { scaleX: 1, duration: .9, ease: 'power3.inOut', stagger: o.s || 0 }, pos);
+      }
+      function lightTo(tl, el, pos) {
+        if (!el) return;
+        tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: RM ? .4 : 1.4, ease: RM ? 'none' : 'power2.inOut' }, pos);
+      }
+
+      /* Once-only scroll reveals, re-buildable until they play (resize / late fonts) */
+      var arms = [];
+      function arm(trigger, build, start) {
+        if (!trigger) return;
+        var a = { trigger: trigger, build: build, start: start || 'top 85%', played: false, splits: [] };
+        arms.push(a); make(a);
+      }
+      function make(a) {
+        building = a;
+        a.tl = gsap.timeline({ paused: true });
+        a.build(a.tl);
+        building = null;
+        a.st = ScrollTrigger.create({
+          trigger: a.trigger, start: a.start, once: true,
+          onEnter: function () { a.played = true; a.tl.play(); }
+        });
+      }
+      function rearm() {
+        arms.forEach(function (a) {
+          if (a.played) return;
+          a.st.kill(); a.tl.kill();
+          a.splits.forEach(unsplit); a.splits = [];
+          make(a);
+        });
+        refresh();
+      }
+
+      /* ---------------------------------------------------------------
+         INIT
+         --------------------------------------------------------------- */
+      function init() {
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.config({ ignoreMobileResize: true });
+
+        if (!RM && window.Lenis) {
+          lenis = new Lenis({ lerp: .1, smoothWheel: true, syncTouch: false });
+          window.__asvLenis = lenis; /* shared with the assistant panel */
+          lenis.on('scroll', ScrollTrigger.update);
+          gsap.ticker.add(function (t) { if (lenis) lenis.raf(t * 1000); });
+          gsap.ticker.lagSmoothing(0);
+        }
+        anchors();
+
+        var fontsIn = false;
+        var fontLoad = (document.fonts && document.fonts.load)
+          ? Promise.all([
+              document.fonts.load('500 60px "Cormorant Garamond"'),
+              document.fonts.load('600 22px "Cormorant Garamond"'),
+              document.fonts.load('400 16px "Nunito Sans"')
+            ]).then(function () { fontsIn = true; }, function () { fontsIn = true; })
+          : Promise.resolve().then(function () { fontsIn = true; });
+        var fontGate = Promise.race([fontLoad, wait(800)]);
+
+        hero(fontGate);
+        pill();
+        thread();
+
+        fontGate.then(function () {
+          sections();
+          refresh();
+          if (!fontsIn) fontLoad.then(rearm); /* lines were measured on the fallback font */
+        });
+
+        var lastW = window.innerWidth, rt;
+        window.addEventListener('resize', function () {
+          if (window.innerWidth === lastW) return;
+          lastW = window.innerWidth;
+          clearTimeout(rt); rt = setTimeout(rearm, 200);
+        });
+      }
+
+      /* Anchor links through Lenis, keeping focus and history correct */
+      function anchors() {
+        document.addEventListener('click', function (e) {
+          if (!lenis || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          var a = e.target.closest && e.target.closest('a[href^="#"]');
+          if (!a) return;
+          var id = a.getAttribute('href');
+          var t = id.length > 1 && document.getElementById(id.slice(1));
+          if (!t) return;
+          e.preventDefault();
+          lenis.scrollTo(t, { duration: 1.2, easing: expoOut });
+          if (history.pushState) history.pushState(null, '', id);
+          if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1');
+          t.focus({ preventScroll: true });
+        });
+      }
+
+      /* ---------------------------------------------------------------
+         1 · HERO: the light comes on, then the name
+         --------------------------------------------------------------- */
+      function hero(fontGate) {
+        var heroEl = $('.hero'), portrait = $('.hero__portrait'), img = $('.hero__img');
+        var name = $('.hero__name'), title = $('.hero__title'), cos = $('.hero__cos'), rule = $('.hero__rule');
+        var nums = $$('.ledger__num'), labels = $$('.ledger__label');
+        var imgReady = (img.decode ? img.decode() : Promise.resolve()).catch(function () {});
+
+        if (RM) {
+          Promise.race([Promise.all([imgReady, fontGate]), wait(900)]).then(function () {
+            gsap.to([img, name, title, cos, rule].concat(nums, labels), { opacity: 1, duration: .4, ease: 'none' });
+          });
+          return;
+        }
+
+        gsap.set(portrait, { xPercent: -50, x: 0 }); /* keep in sync with .hero__portrait translateX */
+        imgReady.then(function () {
+          img.style.willChange = 'opacity, transform';
+          gsap.timeline({ onComplete: function () { img.style.willChange = ''; } })
+            .fromTo(img, { opacity: 0 }, { opacity: 1, duration: 1.4, ease: 'power2.inOut' }, 0)
+            .fromTo(img, { scale: 1.03 }, { scale: 1, duration: 2.2, ease: 'expo.out' }, 0);
+        });
+
+        var t0 = performance.now();
+        fontGate.then(function () {
+          var tl = gsap.timeline({ delay: Math.max(0, .35 - (performance.now() - t0) / 1000) });
+          linesTo(tl, name, 0, { s: .1 });
+          fadeTo(tl, [title, cos], .45, { y: 8, s: .08 });
+          ruleTo(tl, rule, .65);
+          linesTo(tl, nums, .75, { d: .8 });
+          fadeTo(tl, labels, .9, { y: 0, d: .5 });
+        });
+
+        /* Exit: the light dims as you leave. Text is never parallaxed. */
+        gsap.to(portrait, {
+          yPercent: 8, opacity: .4, ease: 'none',
+          scrollTrigger: { trigger: heroEl, start: 'top top', end: 'bottom top', scrub: true }
+        });
+      }
+
+      /* ---------------------------------------------------------------
+         2–5 · Section reveals (once)
+         --------------------------------------------------------------- */
+      function sections() {
+        /* About: the lede line-masks in, then each block fades up as it arrives */
+        var lede = $('.about__lede');
+        arm(lede, function (tl) { linesTo(tl, lede, 0); });
+        $$('.about [data-r="fade"]').forEach(function (el) {
+          arm(el, function (tl) { fadeTo(tl, el, 0); });
+        });
+
+        /* Honours */
+        var hh = $('#honours-h');
+        arm(hh, function (tl) { linesTo(tl, hh, 0); });
+        var feat = $('.featured');
+        arm(feat, function (tl) {
+          lightTo(tl, $('.featured__glow'), 0);
+          linesTo(tl, $('.featured__year'), .1);
+          linesTo(tl, $('.featured__name'), .2);
+          fadeTo(tl, $('.featured__ctx'), .5);
+        });
+        $$('.hitem').forEach(function (li) {
+          arm(li, function (tl) {
+            ruleTo(tl, $('.rule', li), 0);
+            fadeTo(tl, $('.hrow, .more', li), .3, { y: 0 });
+          }, 'top 88%');
+        });
+        var hEnd = $('.hlist__end');
+        arm(hEnd, function (tl) { ruleTo(tl, hEnd, 0); }, 'top 92%');
+
+        /* Journey: heading, legend, then each stop as it arrives */
+        var rh = $('#record-h');
+        arm(rh, function (tl) { linesTo(tl, rh, 0); fadeTo(tl, $('.legend'), .2, { y: 0 }); });
+        $$('.stop').forEach(function (s) {
+          var left = s.classList.contains('stop--left');
+          arm(s, function (tl) {
+            if (RM) { tl.to(s, { opacity: 1, duration: .4, ease: 'none' }, 0); return; }
+            gsap.set(s, { opacity: 1 });
+            tl.fromTo($('.stop__circle', s), { scale: .6, opacity: 0 }, { scale: 1, opacity: 1, duration: .7, ease: 'expo.out', clearProps: 'transform' }, 0)
+              .fromTo($('.stop__conn', s), { scaleX: 0 }, { scaleX: 1, duration: .5, ease: 'power3.out', transformOrigin: left ? '100% 50%' : '0% 50%' }, .1)
+              .fromTo($('.stop__text', s), { opacity: 0, x: left ? 16 : -16 }, { opacity: 1, x: 0, duration: .7, ease: 'expo.out', clearProps: 'transform' }, .15);
+          }, 'top 85%');
+        });
+        var jc = $('.journey__close');
+        arm(jc, function (tl) { fadeTo(tl, jc, 0); });
+
+        /* Contact + footer: the monogram, then the invitation, then the card and links */
+        var foot = $('#contact');
+        arm(foot, function (tl) {
+          fadeTo(tl, $('.foot__logo'), 0, { y: 0, d: .9 });
+          fadeTo(tl, [$('.foot__label'), $('.foot__h'), $('.foot__lede')], .2, { s: .1 });
+          fadeTo(tl, $('.mailcard'), .55, { y: 16, d: .8 });
+          fadeTo(tl, [$('.socials'), $('.copy'), $('.copy2')], .8, { y: 0, s: .08 });
+        }, 'top 80%');
+      }
+
+      /* ---------------------------------------------------------------
+         2 · About: the signature writes itself at the end of the letter
+         --------------------------------------------------------------- */
+      function thread() {
+        var sigEl = $('.about .sig'); if (!sigEl) return;
+        var sig = signature(sigEl);
+        if (RM) {
+          ScrollTrigger.create({ trigger: sigEl, start: 'top 85%', once: true, onEnter: function () { gsap.to(sigEl, { opacity: 1, duration: .4, ease: 'none' }); } });
+          return;
+        }
+        ScrollTrigger.create({ trigger: sigEl, start: 'top 85%', once: true, onEnter: function () { sig.play(); } });
+      }
+
+      /* ---------------------------------------------------------------
+         Journey tap card: Esc / ✕ / backdrop / swipe-down close; focus returns to the circle
+         --------------------------------------------------------------- */
+      function card() {
+        var modal = $('#modal'); if (!modal) return;
+        var box = $('.modal__card', modal), closeBtn = $('.modal__close', modal), opener = null;
+        function fill(id, text) { var el = $('#' + id); el.textContent = text || ''; el.hidden = !text; }
+        function open(btn) {
+          var d = btn.dataset; opener = btn;
+          fill('mRange', d.range); fill('mTitle', d.title); fill('mMeta', d.meta); fill('mDetail', d.detail);
+          box.scrollTop = 0;
+          modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false');
+          html.style.overflow = 'hidden'; if (lenis) lenis.stop();
+          closeBtn.focus({ preventScroll: true });
+        }
+        function close() {
+          if (!modal.classList.contains('is-open')) return;
+          modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true');
+          html.style.overflow = ''; if (lenis) lenis.start();
+          if (opener) opener.focus({ preventScroll: true });
+        }
+        $$('[data-card]').forEach(function (b) { b.addEventListener('click', function () { open(b); }); });
+        closeBtn.addEventListener('click', close);
+        modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+        document.addEventListener('keydown', function (e) {
+          if (!modal.classList.contains('is-open')) return;
+          if (e.key === 'Escape') close();
+          if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); } /* the only control in the card */
+        });
+        var y0 = null;
+        box.addEventListener('touchstart', function (e) { y0 = box.scrollTop <= 0 ? e.touches[0].clientY : null; }, { passive: true });
+        box.addEventListener('touchmove', function (e) { if (y0 !== null && e.touches[0].clientY - y0 > 60) { y0 = null; close(); } }, { passive: true });
+      }
+
+      function signature(el) {
+        var api = { played: false, play: function () {} };
+        if (!el || RM) return api;
+        var inkPath = $('.sig__ink', el);
+        var strokes = $$('#sigStrokes path', el);
+
+        if (strokes.length) {
+          /* Centreline strokes present: reveal the outline through them, in writing order.
+             Browsers restart a dash pattern at every subpath ("M"), so each stroke is split into
+             its subpaths and driven by one eased progress: the pen moves through them in order. */
+          inkPath.setAttribute('mask', 'url(#sigMask)');
+          var polyLen = function (d) {
+            var n = (d.match(/-?\d*\.?\d+(?:e-?\d+)?/gi) || []).map(Number), L = 0;
+            for (var k = 2; k + 1 < n.length; k += 2) L += Math.hypot(n[k] - n[k - 2], n[k + 1] - n[k - 1]);
+            return L;
+          };
+          var groups = strokes.map(function (s) {
+            var d = s.getAttribute('d') || '';
+            var parts = /m/.test(d) ? [d] : d.split(/(?=M)/).map(function (x) { return x.trim(); }).filter(Boolean);
+            var acc = 0;
+            var segs = parts.map(function (pd) {
+              var c = s.cloneNode(false);
+              c.setAttribute('d', pd); c.setAttribute('pathLength', '1');
+              s.parentNode.insertBefore(c, s);
+              var len; try { len = c.getTotalLength(); } catch (e) { len = 0; }
+              if (!len) len = polyLen(pd);
+              var seg = { el: c, start: acc, len: Math.max(len, .5) };
+              acc += seg.len;
+              return seg;
+            });
+            s.parentNode.removeChild(s);
+            return { segs: segs, total: acc };
+          });
+          var segEls = [];
+          groups.forEach(function (g) { g.segs.forEach(function (sg) { segEls.push(sg.el); }); });
+          gsap.set(segEls, { attr: { 'stroke-dasharray': '1 1', 'stroke-dashoffset': 1 }, opacity: 0 });
+          gsap.set(el, { opacity: 1 });
+
+          var setProgress = function (g, t) {
+            var dist = t * g.total;
+            g.segs.forEach(function (sg) {
+              var local = Math.min(1, Math.max(0, (dist - sg.start) / sg.len));
+              sg.el.setAttribute('stroke-dashoffset', String(1 - local));
+              sg.el.style.opacity = local > 0 ? 1 : 0;
+            });
+          };
+          /* When the hand has finished, drop the mask: the outline is shown whole, never clipped */
+          var finish = function () { inkPath.removeAttribute('mask'); };
+
+          api.play = function (instant) {
+            if (api.played) return; api.played = true;
+            if (instant) { groups.forEach(function (g) { setProgress(g, 1); }); finish(); return; }
+            var sum = groups.reduce(function (a, g) { return a + g.total; }, 0);
+            var lift = .06, drawTime = Math.max(.6, 1.9 - lift * (groups.length - 1));
+            var tl = gsap.timeline({ onComplete: finish });
+            groups.forEach(function (g, i) {
+              var o = { t: 0 };
+              tl.to(o, { t: 1, duration: drawTime * g.total / sum, ease: 'sine.inOut',
+                onUpdate: function () { setProgress(g, o.t); } }, i ? '+=' + lift : 0);
+            });
+          };
+        } else {
+          /* Temporary fallback: feathered left-to-right wipe */
+          el.classList.add('sig--wipe');
+          gsap.set(el, { opacity: 1, '--wipe': '100%' });
+          api.play = function (instant) {
+            if (api.played) return; api.played = true;
+            if (instant) { el.classList.remove('sig--wipe'); return; }
+            gsap.to(el, { '--wipe': '0%', duration: 1.6, ease: 'power1.inOut', onComplete: function () { el.classList.remove('sig--wipe'); } });
+          };
+        }
+        return api;
+      }
+
+      /* ---------------------------------------------------------------
+         Email pill: after the hero has left, until Contact arrives
+         --------------------------------------------------------------- */
+      function pill() {
+        var el = $('.pill'), heroEl = $('.hero'), contact = $('#contact');
+        if (!el) return;
+        var gone = false, atContact = false, shown = false;
+        gsap.set(el, { autoAlpha: 0, y: RM ? 0 : 12 });
+        function update() {
+          var s = gone && !atContact;
+          if (s === shown) return; shown = s;
+          gsap.killTweensOf(el);
+          if (s) gsap.to(el, { autoAlpha: 1, y: 0, duration: RM ? .3 : .45, ease: 'power3.out' });
+          else gsap.to(el, { autoAlpha: 0, y: RM ? 0 : 12, duration: .3, ease: 'power2.in' });
+        }
+        ScrollTrigger.create({ trigger: heroEl, start: 'bottom top',
+          onEnter: function () { gone = true; update(); }, onLeaveBack: function () { gone = false; update(); } });
+        ScrollTrigger.create({ trigger: contact, start: 'top 85%',
+          onEnter: function () { atContact = true; update(); }, onLeaveBack: function () { atContact = false; update(); } });
+      }
+
+      /* ---------------------------------------------------------------
+         Honours full list: inline disclosure
+         --------------------------------------------------------------- */
+      function disclosure() {
+        var btn = $('.more'); if (!btn) return;
+        var panel = document.getElementById(btn.getAttribute('aria-controls'));
+        var icon = $('.more__x', btn);
+        var items = $$('.full__group, .full__link', panel);
+
+        btn.addEventListener('click', function () {
+          var open = btn.getAttribute('aria-expanded') !== 'true';
+          btn.setAttribute('aria-expanded', String(open));
+          var G = window.gsap && html.classList.contains('js');
+
+          if (!G) { panel.hidden = !open; refresh(); return; }
+          gsap.killTweensOf([panel, icon].concat(items));
+
+          if (open) {
+            var h0 = panel.hidden ? 0 : panel.offsetHeight;
+            panel.hidden = false;
+            if (RM) {
+              gsap.set(icon, { rotation: 45 });
+              gsap.fromTo(items, { opacity: 0 }, { opacity: 1, duration: .2, ease: 'none' });
+              refresh(); return;
+            }
+            gsap.to(icon, { rotation: 45, duration: .5, ease: 'expo.out' });
+            gsap.fromTo(panel, { height: h0 }, { height: 'auto', duration: .7, ease: 'power3.inOut',
+              onComplete: function () { gsap.set(panel, { clearProps: 'height' }); refresh(); } });
+            gsap.fromTo(items, { opacity: 0 }, { opacity: 1, duration: .25, ease: 'none', stagger: { amount: .15 }, delay: .2 });
+          } else {
+            var collapse = function () {
+              if (RM) { gsap.set(icon, { rotation: 0 }); panel.hidden = true; refresh(); return; }
+              gsap.to(icon, { rotation: 0, duration: .5, ease: 'expo.out' });
+              gsap.to(panel, { height: 0, duration: .5, ease: 'power3.inOut',
+                onComplete: function () { panel.hidden = true; gsap.set(panel, { clearProps: 'height' }); refresh(); } });
+            };
+            if (btn.getBoundingClientRect().top < 0) {
+              if (lenis) lenis.scrollTo(btn, { offset: -96, duration: .6, easing: expoOut, onComplete: collapse });
+              else { window.scrollTo(0, btn.getBoundingClientRect().top + window.pageYOffset - 96); collapse(); }
+            } else collapse();
+          }
+        });
       }
     })();
-
-    /* ---- Expand card (basic modal; FLIP comes later) ---- */
+  </script>
+  <!-- =================================================================
+       ASSISTANT: offline Q&A about Avanish Singh Visen.
+       No API, no server. Every answer comes from his published profile
+       (avanishsinghvisen.com, checked Sep 2026) and this page. To edit an
+       answer, change KB below; keep it factual. Built on the first tap only.
+       ================================================================= -->
+  <script>
     (function () {
-      const modal = document.getElementById('modal'), card = modal.querySelector('.modal__card'),
-        closeBtn = modal.querySelector('.modal__close'), photo = document.getElementById('mPhoto'),
-        $ = id => document.getElementById(id);
-      let opener = null;
+      'use strict';
+      var fab = document.querySelector('.asv-fab');
+      if (!fab) return;
+      var html = document.documentElement;
+      var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      function fill(el, text) { el.textContent = text || ''; el.hidden = !text; }
+      /* Show the button once the visitor starts scrolling (it would sit on the hero's ledger otherwise) */
+      var shown = null;
+      function onScroll() {
+        var s = window.scrollY > window.innerHeight * .35;
+        if (s !== shown) { shown = s; fab.classList.toggle('is-shown', s); }
+      }
+      fab.hidden = false;
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
 
-      function open(btn) {
-        const d = btn.dataset;
-        opener = btn;
-        fill($('mRange'), d.range); fill($('mTitle'), d.title); fill($('mMeta'), d.meta); fill($('mDetail'), d.detail);
-        photo.hidden = !d.photo;
-        if (d.photo) {
-          photo.innerHTML = '<div class="photo-ph"><b>Photo ' + d.n + '</b><span>Drop images/awards/' + d.n + '.webp</span></div>';
-          const img = new Image();
-          img.alt = d.title + ' ceremony photo';
-          img.onload = () => { photo.replaceChildren(img); };
-          img.src = d.photo;
+      var built = false, panel, scrim, log, input, lastIntent = null, idx;
+      fab.addEventListener('click', function () { if (!built) build(); open(); });
+
+      /* ---------------------------------------------------------------
+         KNOWLEDGE BASE
+         t: chip label · k: keywords · p: phrases (bonus when all words appear)
+         a: answer · c: follow-up chips (intent ids) · x: action buttons
+         --------------------------------------------------------------- */
+      var TEL = '+91 11 4092 2210', MAIL = 'info@avanishsinghvisen.com';
+      var FALLBACK_TEXT = 'Sorry, I’m not sure about that one. For anything specific, his office will be glad to help.';
+      var KB = [
+        { id: 'who', t: 'Who is Avanish?', k: 'introduce introduction profile overview summary bio biography person story known famous', p: ['who is he', 'who is avanish', 'tell me about him', 'about avanish', 'about him', 'who is this', 'avanish kaun'],
+          a: 'Avanish Singh Visen is the Director & CEO of DCJ Group in New Delhi, the group behind APPL, Encraft and Enzocraft. He has worked in industry since 2003, across automotive, IT, home appliances, polymers and fenestration.', c: ['roots', 'career', 'awards'] },
+        { id: 'roots', t: 'His roots', k: 'roots root born birthplace grew grow childhood hometown town village farming farm farmer family upbringing raised origin come parents father grandfather early background', p: ['grow up', 'grew up', 'where is he from', 'where does he come from', 'early life', 'is he from', 'native place'],
+          a: 'He grew up in a small town, in a family that farmed. His grandfather and his father taught him to never give up on his dreams and to keep his integrity. In his words: “most success starts with where you come from.”', c: ['values', 'personal'] },
+        { id: 'values', t: 'What he believes in', k: 'values value core pillars pillar principles principle believe belief beliefs trust loyalty transparency philosophy driving drive drives motivate motivates motivation inspire inspires god nature ethics integrity heart relationship relationships', p: ['what does he believe', 'driving force'],
+          a: 'He calls four things the pillars of his life: trust, loyalty, transparency and heart-to-heart relationships. He also says: “God, Nature and Family are key driving forces.”', c: ['leadership', 'mantra'] },
+        { id: 'leadership', t: 'How he leads', k: 'leadership leader lead leads leading style manage management managers team people approach culture employees decision decisions boss', p: ['how does he lead', 'leadership style', 'how is he as a boss', 'work with him', 'like to work with him'],
+          a: '“Machines build products, but people build companies,” he says. He coaches his managers to soften their intensity so employees, partners and clients never feel overwhelmed, and when a decision turns out wrong he changes it quickly rather than defend it.', c: ['mantra', 'values'] },
+        { id: 'mantra', t: 'His success mantra', k: 'mantra motto rule speed quality secret formula tagline slogan', p: ['speed and quality', 'success mantra'],
+          a: 'His mantra is “speed and quality”: decide quickly, and never compromise on quality.', c: ['leadership', 'success'] },
+        { id: 'success', t: 'Success, in his words', k: 'success successful satisfaction meaning define', p: ['what is success', 'define success'],
+          a: '“I think success is the inner sense of satisfaction,” he says.', c: ['values', 'personal'] },
+        { id: 'personal', t: 'Outside work', k: 'hobby hobbies free weekend outside interests interest poetry poem poems meditation meditate relax spare personal life', p: ['free time', 'outside work', 'spare time', 'away from work', 'what does he like to do'],
+          a: 'Away from work he meditates, writes poetry and spends time with his parents and family.', c: ['roots', 'values'] },
+        { id: 'role', t: 'His role today', k: 'role position title designation director ceo current currently heads head job', p: ['what does he do', 'what is his role', 'current role', 'his job'],
+          a: 'He is Director & CEO of DCJ Group, the role he has held since June 2020. Before that he was CEO of Encraft India (2018–2020), and from 2010 he headed supply chain for the group.', c: ['dcj', 'career'] },
+        { id: 'dcj', t: 'DCJ Group', k: 'dcj group groups company companies business businesses founded founder 1961 history conglomerate own owns', p: ['dcj group', 'what does the group do', 'which companies'],
+          a: 'DCJ Group was founded in 1961. Today it includes APPL, which makes refrigerator seals and glass shelves, Encraft, which makes uPVC door and window profile systems, and Enzocraft.', c: ['role', 'companyawards'] },
+        { id: 'appl', parent: 'dcj', t: 'About APPL', k: 'appl ajay poly refrigerator fridge seals seal gasket gaskets glass shelves shelf appliance appliances',
+          a: 'APPL (Ajay Poly) is part of DCJ Group. It makes refrigerator seals and glass shelves, and has been recognised by customers such as Haier and LG.', c: ['companyawards', 'business'] },
+        { id: 'encraft', parent: 'dcj', t: 'About Encraft', k: 'encraft upvc windows window doors door profiles profile fenestration',
+          a: 'Encraft is part of DCJ Group and makes uPVC door and window profile systems. He was its CEO from 2018 to 2020.', c: ['companyawards', 'business'] },
+        { id: 'enzocraft', parent: 'dcj', t: 'About Enzocraft', k: 'enzocraft enzo',
+          a: 'Enzocraft is one of the three companies in DCJ Group. For details about its products, the team can help you directly.', c: ['business'], x: ['email', 'call'] },
+        { id: 'career', t: 'His career', k: 'career experience journey join joined worked previous earlier jobs employers mahindra eicher lenovo videocon seaga sourcing procurement purchase supply chain scm timeline path companies', p: ['where did he work', 'work experience', 'his career', 'before dcj', 'previous companies'],
+          a: 'He started in 2003 at Mahindra & Mahindra, then worked at Eicher Tractors, Lenovo, Videocon and Seaga India in sourcing and purchase. He joined DCJ Group in 2010 as SCM Head, became CEO of Encraft in 2018 and Director & CEO of DCJ Group in 2020.', c: ['education', 'role'], x: ['journey'] },
+        { id: 'years', t: 'Years of experience', k: 'years year experience experienced long since', p: ['how many years', 'how long', 'years of experience', 'since when', 'how experienced'],
+          a: 'More than 20 years. His first role was at Mahindra & Mahindra in July 2003.', c: ['career'] },
+        { id: 'education', t: 'His education', k: 'education study studied qualification qualifications qualified degree degrees college university school mba diploma engineering engineer iert eiilm allahabad academic padhai', p: ['where did he study', 'what did he study'],
+          a: 'He holds a Diploma in Mechanical Engineering from IERT Allahabad (2000–2003) and an MBA in Logistics, Materials & Supply Chain Management from EIILM University (2010–2012).', c: ['career'] },
+        { id: 'awards', t: 'His awards', k: 'awards award honours honour honors honor recognition recognitions prize prizes trophy recognised recognized achievements achievement achieve achieved accolades won win puraskar', p: ['how many awards', 'all awards', 'his awards'],
+          a: 'DCJ Group and its companies have received more than 30 honours since 2018, and 12 of them are personal to him. Recent ones include the Atal Youth Icon 2025, India’s Most Trusted CEO 2022, and customer awards from Haier and LG.', c: ['atal', 'personalawards', 'companyawards'], x: ['honours'] },
+        { id: 'atal', parent: 'awards', t: 'Atal Youth Icon 2025', k: 'atal youth icon keynote speech museum prime minister vajpayee', p: ['make in india', 'pm museum', 'prime minister museum'],
+          a: 'In 2025 he received the Young World Entrepreneur Atal Icon Award (Atal Youth Icon) at the National Atal Award Ceremony at the Prime Minister Museum, where he gave a keynote on Make in India.', c: ['awards', 'personalawards'] },
+        { id: 'personalawards', parent: 'awards', t: 'His personal honours', k: 'personal individual own trusted wcrc inspirational asia admired global indians fastest', p: ['personal awards', 'his own awards', 'individual awards', 'most trusted ceo'],
+          a: 'His personal honours include India’s Most Trusted CEO (2022) and Trusted CEO (2020–21) from WCRC Leaders, Inspirational Leaders of Asia (2022), Atal Udyog Ratna (2024), The Most Admired Global Indians (2020) and Fastest Growing Leaders (2018–19).', c: ['atal', 'companyawards'], x: ['honours'] },
+        { id: 'companyawards', parent: 'awards', t: 'Group honours', k: 'haier lg samsung godrej hudco uttarakhand brand brands', p: ['company awards', 'group awards', 'encraft awards', 'appl awards', 'encraft won', 'appl won', 'dcj awards', 'ajay poly awards'],
+          a: 'Group honours include Haier’s Best Quality Award and LG’s Silver Award for APPL (2025), and for Encraft, the Best Use of Technology award from the Uttarakhand Chief Minister and Best uPVC Brand presented by the HUDCO Chairman (both 2024).', c: ['personalawards', 'awards'], x: ['honours'] },
+        { id: 'media', t: 'Interviews & press', k: 'media interview interviews press news article articles featured feature magazine magazines tv ndtv cnbc zee podcast', p: ['in the news', 'press coverage'],
+          a: 'He has been interviewed by NDTV, and he and his companies have been featured by CNBC Awaaz, Zee Business and Construction World, among others. His website lists the interviews and articles.', c: ['awards'], x: ['site'] },
+        { id: 'business', t: 'Business enquiry', k: 'business enquiry enquiries inquiry inquiries query quote quotation order orders buy product products pricing price rates bulk requirement requirements sales', p: ['business enquiry', 'want to buy', 'place an order'],
+          a: 'For business enquiries, the quickest way is to email or call the office. It’s open Monday to Friday, 9 am to 6 pm.', x: ['email', 'call'] },
+        { id: 'partner', t: 'Partnerships', k: 'supply raw material materials partner partners partnership partnering collaborate collaboration dealer dealers dealership distributor distributors distribution franchise supplier suppliers vendor vendors tieup invest investor investors investment', p: ['tie up', 'become a dealer', 'work together', 'work with dcj', 'work with the group', 'work with you'],
+          a: 'For partnership, dealership, supply or investment enquiries, please email a short note about your business, and the team will direct it to the right company.', x: ['email', 'call'] },
+        { id: 'jobs', t: 'Careers', k: 'vacancy vacancies hiring hire opening openings recruit recruitment internship intern resume cv apply naukri', p: ['job opening', 'looking for a job', 'job opportunity', 'work for'],
+          a: 'I don’t have details of current openings. You’re welcome to email your details, and the team will share them with the right people.', x: ['email'] },
+        { id: 'contact', t: 'Contact details', k: 'contact reach touch connect details message sampark', p: ['get in touch', 'reach him', 'contact him', 'how to contact', 'talk to him', 'speak to him', 'speak with him'],
+          a: 'You can call the office on ' + TEL + ' (Monday to Friday, 9 am to 6 pm) or email ' + MAIL + '.', x: ['call', 'email'], c: ['office'] },
+        { id: 'phone', t: 'Phone number', k: 'phone call number mobile telephone landline ring', p: ['phone number', 'contact number'],
+          a: 'The office line is ' + TEL + ', Monday to Friday, 9 am to 6 pm.', x: ['call'], c: ['email'] },
+        { id: 'email', t: 'Email', k: 'email mail emails write inbox', p: ['email id', 'email address'],
+          a: 'You can write to ' + MAIL + '.', x: ['email'], c: ['phone'] },
+        { id: 'office', t: 'Office & directions', k: 'office address located location directions direction map visit headquarters hq okhla based kahan factory', p: ['where is his office', 'where is the office', 'where is he based', 'office address', 'office in delhi', 'where is dcj', 'group located'],
+          a: 'The office is at 70, Okhla Industrial Estate, Phase III, New Delhi 110020. It’s open Monday to Friday, 9 am to 6 pm.', x: ['map', 'call'] },
+        { id: 'hours', t: 'Office hours', k: 'hours hour available availability timing timings open opening close closing time days saturday sunday weekday weekdays', p: ['office hours', 'office open', 'open today', 'working hours', 'what time', 'when is the office open', 'what time does the office open', 'office timing'],
+          a: 'The office is open Monday to Friday, 9 am to 6 pm.', x: ['call', 'email'] },
+        { id: 'social', t: 'LinkedIn & social', k: 'linkedin instagram insta facebook fb youtube social follow handle channel', p: ['social media'],
+          a: 'He’s on LinkedIn, Instagram, Facebook and YouTube. LinkedIn is the best place to connect professionally.', x: ['linkedin'] },
+        { id: 'meeting', t: 'Request a meeting', k: 'meet meeting meetings appointment appointments schedule', p: ['meet him', 'set up a meeting', 'book a meeting'],
+          a: 'To request a meeting, please email or call the office, Monday to Friday, 9 am to 6 pm.', x: ['email', 'call'] },
+        { id: 'private', t: '', k: 'age birthday salary income net worth wealth rich married wife husband spouse children kids son daughter religion caste politics political party whatsapp', p: ['how old is he', 'how old is avanish', 'his age', 'net worth', 'personal number', 'when was he born'],
+          a: 'Sorry, that isn’t something I can share. For anything else, you’re welcome to reach out to the office.', x: ['email', 'call'] },
+        { id: 'nodata', t: '', k: 'stock stocks ipo listed revenue turnover profit profits valuation employees employee staff headcount strength figures', p: ['how many employees', 'share price', 'stock price', 'annual revenue', 'team size'],
+          a: FALLBACK_TEXT, x: ['call', 'email'] },
+        { id: 'hello', t: '', k: 'hi hello hey hii helo namaste namaskar greetings', p: ['good morning', 'good evening', 'good afternoon'],
+          a: 'Hello! What would you like to know about Avanish?', c: ['who', 'awards', 'business', 'office'] },
+        { id: 'thanks', t: '', k: 'thanks thank thankyou thx great helpful awesome nice cool perfect dhanyavad shukriya', p: ['thank you'],
+          a: 'You’re welcome. Is there anything else I can help with?', c: ['who', 'contact'] },
+        { id: 'bye', t: '', k: 'bye goodbye cya', p: ['see you'], a: 'Thank you for visiting. Have a good day.' },
+        { id: 'bot', t: '', k: 'bot assistant robot chatbot ai', p: ['who are you', 'are you human', 'are you real', 'what are you'],
+          a: 'I’m a simple assistant on this page. I answer from Avanish’s published profile, and nothing you type is sent anywhere.', c: ['who', 'contact'] }
+      ];
+      var FALLBACK = FALLBACK_TEXT;
+      var WELCOME = 'Hello! I can tell you about Avanish Singh Visen: his story, his work, his honours, and how to reach him.';
+      var STARTERS = ['who', 'awards', 'business', 'office'];
+
+      var ACTIONS = {
+        call: { l: 'Call', href: 'tel:+911140922210', i: '<path d="M5 4h3l1.5 4-2 1.3a11 11 0 0 0 5.2 5.2l1.3-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>' },
+        email: { l: 'Email', href: 'mailto:' + MAIL, i: '<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/>' },
+        map: { l: 'Directions', href: 'https://www.google.com/maps/search/?api=1&query=28.549218%2C77.267364', ext: 1, i: '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>' },
+        linkedin: { l: 'LinkedIn', href: 'https://www.linkedin.com/in/avanish-visen-b0bb325/', ext: 1, i: '<path d="M7 10v7M7 7v.01M11 17v-7M11 13a3 3 0 0 1 6 0v4"/>' },
+        site: { l: 'His website', href: 'https://avanishsinghvisen.com/news-and-articles', ext: 1, i: '<path d="M7 17 17 7M9 7h8v8"/>' },
+        honours: { l: 'See honours', to: '#honours', i: '<path d="M12 5v14M6 13l6 6 6-6"/>' },
+        journey: { l: 'See his journey', to: '#record', i: '<path d="M12 5v14M6 13l6 6 6-6"/>' }
+      };
+
+      /* ---------------------------------------------------------------
+         MATCHING: normalise → stem → synonyms → typo-tolerant lookup →
+         keyword weights (rarer words count more) + phrase bonus
+         --------------------------------------------------------------- */
+      var STOP = {};
+      ('a an the is are was were be been am of to in on at for and or his him he me my i you your yours about tell please pls plz can could would should do does did it its this that these those with from any some kya hai ka ki ke ko se mein me there here what whats which how much many does get give know want need like just also so very really').split(' ').forEach(function (w) { STOP[w] = 1; });
+      var KEEP = { who: 1, where: 1, when: 1, how: 1, what: 1, you: 1, are: 1, many: 1, long: 1, old: 1, time: 1, is: 1, he: 1, his: 1, him: 1, does: 1, did: 1, do: 1, the: 1, a: 1, an: 1, of: 1, in: 1, to: 1, for: 1, with: 1, me: 1, about: 1, from: 1, up: 1, work: 1, set: 1, book: 1, place: 1 };
+      var SYN = {
+        honour: 'award', honor: 'award', recognition: 'award', prize: 'award', trophy: 'award', accolade: 'award', puraskar: 'award',
+        mail: 'email', 'e-mail': 'email', emailid: 'email', gmail: 'email',
+        telephone: 'phone', mobile: 'phone', cell: 'phone', contactno: 'phone',
+        location: 'office', address: 'office', located: 'office', kahan: 'office', headquarter: 'office', hq: 'office',
+        timing: 'hour', timings: 'hour', schedule: 'meeting', appointment: 'meeting',
+        study: 'education', studied: 'education', qualification: 'education', degree: 'education', padhai: 'education',
+        kaun: 'who', naukri: 'job', vacancy: 'job', opening: 'job', hiring: 'job',
+        dealership: 'dealer', distributorship: 'distributor', collaborate: 'partner', collaboration: 'partner', partnership: 'partner',
+        insta: 'instagram', fb: 'facebook', yt: 'youtube',
+        enquiry: 'enquiry', inquiry: 'enquiry', inquiries: 'enquiry', enquiries: 'enquiry', query: 'enquiry',
+        leader: 'leadership', leading: 'leadership', lead: 'leadership', leads: 'leadership',
+        hobby: 'hobby', hobbies: 'hobby', poem: 'poetry', poems: 'poetry', meditate: 'meditation',
+        grew: 'grow', raised: 'grow', upbringing: 'grow', childhood: 'grow', hometown: 'town', village: 'town',
+        founded: 'found', founder: 'found', started: 'start', ceo: 'ceo'
+      };
+
+      function stem(w) {
+        if (w.length > 4 && /ies$/.test(w)) return w.slice(0, -3) + 'y';
+        if (w.length > 3 && /s$/.test(w) && !/(ss|us|is)$/.test(w)) return w.slice(0, -1);
+        if (w.length > 5 && /ing$/.test(w)) return w.slice(0, -3);
+        return w;
+      }
+      function canon(w) { if (STOP[w]) return w; if (SYN[w]) return SYN[w]; var s = stem(w); return SYN[s] || s; }
+      function words(s) {
+        return String(s).toLowerCase().replace(/[’`']/g, '').replace(/&/g, ' and ')
+          .replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+      }
+      function toks(s) { return words(s).map(canon); }
+
+      function buildIndex() {
+        var df = {}, vocab = {};
+        KB.forEach(function (it) {
+          it._k = {}; toks(it.k).forEach(function (w) { it._k[w] = 1; });
+          it._p = (it.p || []).map(function (p) { return toks(p).filter(function (w, i, a) { return a.indexOf(w) === i; }); });
+          Object.keys(it._k).forEach(function (w) { df[w] = (df[w] || 0) + 1; vocab[w] = 1; });
+          it._p.forEach(function (p) { p.forEach(function (w) { if (!STOP[w] || KEEP[w]) vocab[w] = 1; }); });
+        });
+        var N = KB.length, idf = {};
+        Object.keys(df).forEach(function (w) { idf[w] = 1 + Math.log(N / df[w]); });
+        return { idf: idf, vocab: Object.keys(vocab), byId: KB.reduce(function (m, it) { m[it.id] = it; return m; }, {}) };
+      }
+
+      /* Damerau–Levenshtein distance, early exit when over the limit */
+      function dist(a, b, max) {
+        if (Math.abs(a.length - b.length) > max) return max + 1;
+        var d = [], i, j;
+        for (i = 0; i <= a.length; i++) { d[i] = [i]; }
+        for (j = 0; j <= b.length; j++) d[0][j] = j;
+        for (i = 1; i <= a.length; i++) {
+          var rowMin = Infinity;
+          for (j = 1; j <= b.length; j++) {
+            var c = a[i - 1] === b[j - 1] ? 0 : 1;
+            d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + c);
+            if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+            rowMin = Math.min(rowMin, d[i][j]);
+          }
+          if (rowMin > max) return max + 1;
         }
-        card.scrollTop = 0;
-        modal.classList.add('is-open');
-        modal.setAttribute('aria-hidden', 'false');
-        document.documentElement.style.overflow = 'hidden';
-        if (lenis) lenis.stop();
-        closeBtn.focus({ preventScroll: true });
+        return d[a.length][b.length];
+      }
+      function fix(w) {
+        if (w.length < 4 || /^\d+$/.test(w)) return w;
+        var max = w.length >= 7 ? 2 : 1, best = w, bd = max + 1;
+        idx.vocab.forEach(function (v) {
+          if (v.length < 3) return;
+          if (w.length === 4 && v.length <= 4) return;
+          var dd = dist(w, v, max);
+          if (dd === 2 && v[0] !== w[0]) return;
+          if (dd < bd || (dd === bd && v[0] === w[0] && best[0] !== w[0])) { bd = dd; best = v; }
+        });
+        return bd <= max ? best : w;
       }
 
+      function match(q) {
+        var all = toks(q).map(function (w) { return idx.idf[w] || idx.vocab.indexOf(w) > -1 || STOP[w] ? w : fix(w); });
+        var content = all.filter(function (w) { return !STOP[w] && !NAME[w]; });
+        var named = all.some(function (w) { return NAME[w]; });
+        var set = {}; all.forEach(function (w) { set[w] = 1; });
+        var scored = KB.map(function (it) {
+          var s = 0, hit = 0;
+          var ph = false, got = {};
+          content.forEach(function (w) { if (it._k[w]) { s += idx.idf[w] * (ENTITY[w] && content.length > 1 ? .4 : 1); got[w] = 1; } });
+          it._p.forEach(function (p) {
+            if (p.length && p.every(function (w) { return set[w]; })) { s += 3.5 + p.length * .5; ph = true; p.forEach(function (w) { got[w] = 1; }); }
+          });
+          /* coverage counts words explained by keywords or by a matched phrase */
+          content.forEach(function (w) { if (got[w]) hit++; });
+          if (content.length) s *= .5 + .5 * hit / content.length;
+          return { it: it, s: s, hit: hit, ph: ph };
+        });
+        var byId = {}; scored.forEach(function (r) { byId[r.it.id] = r; });
+        scored.forEach(function (r) {
+          var par = r.it.parent && byId[r.it.parent];
+          if (par && par.s > 0 && (r.hit || r.ph) && r.s > 0) r.s = Math.max(r.s, par.s) + 1.5;
+        });
+        var acting = scored.some(function (r) { return ACT[r.it.id] && r.hit; });
+        scored.forEach(function (r) {
+          if (!acting) return;
+          if (ACT[r.it.id] && r.hit) r.s += 3; else if (!ACT[r.it.id]) r.s *= .6;
+        });
+        scored.sort(function (a, b) { return b.s - a.s; });
+        /* just his name ("Avanish?") means: who is he */
+        if (!content.length && named) return { best: { it: idx.byId.who, s: 9 }, second: null, content: content };
+        return { best: scored[0], second: scored[1], content: content };
+      }
+
+      var ENTITY = { dcj: 1, group: 1, company: 1, companies: 1 };
+      var ACT = { business: 1, partner: 1, jobs: 1, meeting: 1, nodata: 1, private: 1 };
+      var NAME = { avanish: 1, visen: 1, singh: 1, mr: 1, sir: 1, shri: 1, ji: 1, avnish: 1 };
+      var MORE = { more: 1, else: 1, detail: 1, details: 1, continue: 1, elaborate: 1, explain: 1, go: 1, on: 1, and: 1, then: 1, ok: 1, okay: 1, yes: 1, sure: 1, aur: 1 };
+      function respond(q) {
+        var m = match(q);
+        var onlyFollow = m.content.length && m.content.every(function (w) { return MORE[w]; });
+        if (onlyFollow && lastIntent) {
+          var next = (lastIntent.c || [])[0];
+          if (next) return answer(idx.byId[next]);
+        }
+        if (!m.best || m.best.s < 1.6) return fallback();
+        if (m.second && m.second.s >= m.best.s * .92 && m.best.s < 4 && m.second.it.t && m.best.it.t) {
+          return say('Did you mean one of these?', [m.best.it.id, m.second.it.id]);
+        }
+        answer(m.best.it);
+      }
+      function answer(it) { lastIntent = it; say(it.a, it.c, it.x); }
+      function fallback() { lastIntent = null; say(FALLBACK, null, ['call', 'email']); }
+
+      /* ---------------------------------------------------------------
+         UI
+         --------------------------------------------------------------- */
+      function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+      function icon(p) { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + p + '</svg>'; }
+
+      function build() {
+        built = true;
+        idx = buildIndex();
+        scrim = el('div', 'asv-scrim');
+        panel = el('div', 'asv-panel');
+        panel.setAttribute('role', 'dialog'); panel.setAttribute('aria-modal', 'true');
+        panel.setAttribute('aria-labelledby', 'asvTitle'); panel.setAttribute('data-lenis-prevent', '');
+        panel.innerHTML =
+          '<div class="asv-head"><div class="asv-head__txt"><p class="asv-title" id="asvTitle" tabindex="-1">Ask about Avanish</p>' +
+          '<p class="asv-sub">Answers from his published profile</p></div>' +
+          '<button class="asv-x" type="button" aria-label="Close">' + icon('<path d="M6 6l12 12M18 6 6 18"/>') + '</button></div>' +
+          '<div class="asv-log" role="log" aria-live="polite"></div>' +
+          '<form class="asv-form" autocomplete="off"><input class="asv-in" type="text" maxlength="160" placeholder="Ask a question…" aria-label="Type your question" enterkeyhint="send">' +
+          '<button class="asv-send" type="submit" aria-label="Send">' + icon('<path d="M4 12h15M13 6l6 6-6 6"/>') + '</button></form>';
+        document.body.appendChild(scrim); document.body.appendChild(panel);
+        log = panel.querySelector('.asv-log'); input = panel.querySelector('.asv-in');
+        panel.querySelector('.asv-x').addEventListener('click', close);
+        scrim.addEventListener('click', close);
+        panel.querySelector('.asv-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          var q = input.value.trim(); if (!q) return;
+          input.value = ''; me(q); respond(q);
+        });
+        panel.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+          if (e.key !== 'Tab') return;
+          var f = Array.prototype.filter.call(panel.querySelectorAll('button, a[href], input'), function (n) { return n.offsetParent !== null; });
+          if (!f.length) return;
+          if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+          else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+        });
+        say(WELCOME, STARTERS);
+      }
+
+      function scrollBottom() { log.scrollTop = log.scrollHeight; }
+      function me(text) { log.appendChild(el('div', 'asv-msg asv-msg--me', text)); scrollBottom(); }
+      function say(text, chips, acts) {
+        log.appendChild(el('div', 'asv-msg asv-msg--bot', text));
+        var row = el('div', 'asv-row');
+        (acts || []).forEach(function (k) {
+          var A = ACTIONS[k]; if (!A) return;
+          var a = el('a', 'asv-act');
+          a.href = A.href || A.to;
+          if (A.ext) { a.target = '_blank'; a.rel = 'noopener'; }
+          a.innerHTML = icon(A.i) + '<span></span>'; a.querySelector('span').textContent = A.l;
+          if (A.to) a.addEventListener('click', function (e) { e.preventDefault(); close(); go(A.to); });
+          row.appendChild(a);
+        });
+        (chips || []).forEach(function (id) {
+          var it = idx.byId[id]; if (!it || !it.t) return;
+          var b = el('button', 'asv-chip', it.t); b.type = 'button';
+          b.addEventListener('click', function () { me(it.t); answer(it); });
+          row.appendChild(b);
+        });
+        if (row.children.length) log.appendChild(row);
+        scrollBottom();
+      }
+      function go(sel) {
+        var t = document.querySelector(sel); if (!t) return;
+        var L = window.__asvLenis;
+        if (L) L.scrollTo(t, { duration: 1.2 }); else t.scrollIntoView({ behavior: RM ? 'auto' : 'smooth' });
+      }
+
+      function open() {
+        html.classList.add('asv-open');
+        html.style.overflow = 'hidden';
+        if (window.__asvLenis) window.__asvLenis.stop();
+        fab.setAttribute('aria-expanded', 'true');
+        var fine = window.matchMedia('(pointer: fine)').matches;
+        setTimeout(function () { (fine ? input : panel.querySelector('#asvTitle')).focus({ preventScroll: true }); }, 60);
+        scrollBottom();
+      }
       function close() {
-        if (!modal.classList.contains('is-open')) return;
-        modal.classList.remove('is-open');
-        modal.setAttribute('aria-hidden', 'true');
-        document.documentElement.style.overflow = '';
-        if (lenis) lenis.start();
-        if (opener) opener.focus({ preventScroll: true });
+        html.classList.remove('asv-open');
+        html.style.overflow = '';
+        if (window.__asvLenis) window.__asvLenis.start();
+        fab.setAttribute('aria-expanded', 'false');
+        fab.focus({ preventScroll: true });
       }
 
-      document.querySelectorAll('[data-card]').forEach(b => b.addEventListener('click', () => open(b)));
-      closeBtn.addEventListener('click', close);
-      modal.addEventListener('click', e => { if (e.target === modal) close(); });
-      addEventListener('keydown', e => {
-        if (!modal.classList.contains('is-open')) return;
-        if (e.key === 'Escape') close();
-        if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); } // only focusable control in the card
-      });
-
-      // swipe down > 60px closes
-      let y0 = null;
-      card.addEventListener('touchstart', e => { y0 = card.scrollTop <= 0 ? e.touches[0].clientY : null; }, { passive: true });
-      card.addEventListener('touchmove', e => {
-        if (y0 !== null && e.touches[0].clientY - y0 > 60) { y0 = null; close(); }
-      }, { passive: true });
+      /* test hook: returns the intent id the matcher picks (used by the QA script) */
+      window.__asvMatch = function (q) {
+        if (!idx) idx = buildIndex();
+        var m = match(q), c = m.content.length > 0 && m.content.every(function (w) { return MORE[w]; });
+        if (!m.best || m.best.s < 1.6) return 'fallback';
+        if (m.second && m.second.s >= m.best.s * .92 && m.best.s < 4 && m.second.it.t && m.best.it.t) return 'ask:' + m.best.it.id + '|' + m.second.it.id;
+        return m.best.it.id + (c ? '(follow)' : '');
+      };
     })();
   </script>
 </body>

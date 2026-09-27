@@ -5,7 +5,7 @@ Applies to every section. The values live in `:root` in `index.html`. Don't add 
 ## Grid
 - Mobile-first at 390px. Must also work at 360px.
 - **Gutter:** 24px at ≥ 375px; 20px below 375px.
-- **Desktop (≥ 481px):** one column, max-width 480px, centred, 32px gutter, on a `--navy2` backdrop with a 1px `rgba(250,247,242,.06)` edge left and right. No box-shadow.
+- **Desktop (≥ 481px):** one column, max-width 480px, centred, 32px gutter, on a `--navy-deep` backdrop with a 1px `rgba(250,247,242,.06)` edge left and right. No box-shadow.
 - **One left axis:** everything hangs on the left gutter. Nothing is centred.
 - **Section padding:** 80px top and bottom (72px below 375px). Exceptions: Hero has no top padding; Contact has 72px top. Hero and Contact bottoms are `max(32px, env(safe-area-inset-bottom) + 20px)`.
 - **Space scale:** 4 · 8 · 12 · 16 · 24 · 32 · 40 · 48 · 56 · 80. The section specs name a few fixed exceptions (6, 14, 18, 20, 28, 36, 72). Don't add others.
@@ -15,17 +15,17 @@ Applies to every section. The values live in `:root` in `index.html`. Don't add 
 | Token | Value | Role |
 |---|---|---|
 | `--navy` | #0E1A30 | Ground of Hero, Honours, Contact. Ink on ivory |
-| `--navy2` | #07101F | Desktop backdrop, contact card fill, email pill fill (at 92%) |
+| `--navy-deep` | #07101F | Desktop backdrop, contact card fill, email pill fill (at 92%) |
 | `--gold` | #C4973A | Light: hairlines, the thread, dots, arrows, and text **on navy only** (hero title, years, contact title). Its one fill is the email button |
-| `--gold2` | #E5C16A | Focus ring on navy. email button `:active` |
+| `--gold-light` | #E5C16A | Focus ring on navy. email button `:active` |
 | `--ivory` | #FAF7F2 | Ground of Intro and Honours. Text on navy |
 | `--ink-78` | rgba(14,26,48,.78) | Body text on ivory (≈ 8:1) |
 | `--ink-62` | rgba(14,26,48,.62) | Secondary text on ivory (≈ 4.8:1). Lightest text allowed on ivory |
 | `--ivory-75` | rgba(250,247,242,.75) | Body text on navy |
 | `--ivory-60` | rgba(250,247,242,.6) | Secondary text on navy (≈ 6.5:1). Lightest text allowed on navy |
-| `--hair-ivory` | rgba(14,26,48,.12) | Hairlines on ivory |
-| `--hair-navy` | rgba(250,247,242,.12) | Hairlines on navy (contact card rows use .10) |
-| `--hair-ledger` | rgba(196,151,58,.45) | Hero ledger rule, email pill border, pre-ink dot border |
+| `--ink-12` | rgba(14,26,48,.12) | Hairlines on ivory |
+| `--ivory-12` | rgba(250,247,242,.12) | Hairlines on navy (contact card rows use .10) |
+| `--gold-45` | rgba(196,151,58,.45) | Hero ledger rule, email pill border, pre-ink dot border |
 
 Other gold alphas, one use each: `.16` honours glow · `.28` contact card border · `.3` thread track. Social circles use a 1px `rgba(250,247,242,.18)` border.
 
@@ -60,7 +60,7 @@ Two voices. Cormorant Garamond is for what you would engrave (the name, titles, 
 
 ## Interaction
 - **Press:** rows and buttons on `:active` scale to .98 over 120ms, with a tint of `rgba(250,247,242,.04)` on navy or `rgba(14,26,48,.04)` on ivory.
-- **Focus ring:** 2px `--gold2`, offset 3px, on navy. 2px `--navy`, offset 3px, on ivory.
+- **Focus ring:** 2px `--gold-light`, offset 3px, on navy. 2px `--navy`, offset 3px, on ivory.
 - **Tap targets:** 56px for ledger cells, the disclosure button and the email button. At least 68px for contact rows and 72px for company rows. 48px for socials, the pill, the panel link and the skip link. Nothing smaller.
 
 ## Motion

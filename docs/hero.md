@@ -27,7 +27,7 @@ The gold halo in the photo is the page's only warm light, and its colour already
 |---|---|---|
 | `images/hero-640.webp` | 640×960, ≈ 21 KB | `srcset` |
 | `images/hero-1024.webp` | 1024×1536, ≈ 48 KB | `srcset` and `src` |
-| `images/hero.webp` | 1024×1536, 1.75 MB | Master only. Keep it out of the deploy |
+| `docs/source-assets/hero-master.webp` | 1024×1536, 1.75 MB | Master only, not deployed |
 
 - There is no larger size, because the source is only 1024px wide. If the photographer's original arrives, re-export both files from it and add a wider one. Check the halo for banding.
 - `images/hero-soft.webp` is retired. Never reference it.
@@ -49,7 +49,7 @@ The gold halo in the photo is the page's only warm light, and its colour already
 | Name (`h1`), two lines | `display-xl`, `--ivory` | — |
 | Title | `display-s` at weight 500, `--gold` | 14 |
 | Companies | `body-s`, `--ivory-60` | 6 |
-| Ledger rule | 1px `--hair-ledger`, full text width, `aria-hidden` | 28 |
+| Ledger rule | 1px `--gold-45`, full text width, `aria-hidden` | 28 |
 | Ledger | two-column grid, `1fr 1fr`, gap 24 | 16 |
 
 **Ledger cells.** Each cell is one `<a>`, at least 56px tall, that jumps into the page. They are not contact actions.

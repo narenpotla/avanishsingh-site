@@ -18,7 +18,7 @@ Recognised nationally, and by customers such as LG and Haier. Three parts: **hea
 - Name (`h3`): `display-l`, `--navy`, 4 above.
 - Context: `body`, `--ink-78`, 12 above, ≤ 3 lines.
 
-**Rows.** A `--hair-ivory` hairline above each row. Grid: a 56px year column, then the text. Padding 18px top and bottom.
+**Rows.** A `--ink-12` hairline above each row. Grid: a 56px year column, then the text. Padding 18px top and bottom.
 - Year: `display-s`, `--gold-ink`. Name: `display-s` 600, `--navy`. By-line: `body-s`, `--ink-62`, 4 above.
 
 **Disclosure button.** A `<button>` at least 56px tall, full width, with a hairline above and below it. Label in `body` 600, `--navy`. On the right, a 12px ＋ made of two 1px `--gold` lines, which rotates 45° to × when open. `aria-expanded` and `aria-controls` point to the panel. Focus stays on the button.

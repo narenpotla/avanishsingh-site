@@ -246,12 +246,25 @@
       fadeTo(tl, [title, cos], .45, { y: 8, s: .08 });
       ruleTo(tl, rule, .65);
       linesTo(tl, nums, .75, { d: .8 });
+      countUp(tl, $$('.count', heroEl), .75);
       fadeTo(tl, labels, .9, { y: 0, d: .5 });
     });
 
     gsap.to(portrait, {
       yPercent: 8, opacity: .4, ease: 'none',
       scrollTrigger: { trigger: heroEl, start: 'top top', end: 'bottom top', scrub: true }
+    });
+  }
+
+  /* Rolls a number up from 0 to its own text. Its width is held at the final value so nothing beside it shifts. */
+  function countUp(tl, els, at) {
+    els.forEach(function (el) {
+      var to = parseInt(el.textContent, 10), n = { v: 0 };
+      el.style.display = 'inline-block';
+      el.style.minWidth = el.getBoundingClientRect().width + 'px';
+      el.textContent = '0';
+      tl.to(n, { v: to, duration: 1.6, ease: 'power2.out', onUpdate: function () { el.textContent = Math.round(n.v); },
+        onComplete: function () { el.style.display = el.style.minWidth = ''; } }, at);
     });
   }
 

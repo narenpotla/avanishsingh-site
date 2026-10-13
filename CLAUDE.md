@@ -21,7 +21,7 @@ The design is final. Changes are content updates, fixes, or requests from the us
 | `js/main.js` | Smooth scroll, reveals, hero intro, signature, timeline card, honours list, "Reach out" pill. |
 | `js/assistant.js` | Offline assistant: matcher and chat panel. Tuning constants at the top. |
 | `js/assistant-kb.js` | Assistant knowledge (intents, answers, synonyms). Lazy-loaded. |
-| `js/voice.js` | Tap-to-enter screen + voice-over (`audio/vo.mp3`). The tap unlocks sound; the hero intro waits for it. Pause button hides when the voice-over ends. |
+| `js/voice.js` | Voice-over (`audio/vo.mp3`): autoplays where allowed, otherwise starts on the first tap. Pause button hides when it ends. |
 | `images/` | Deployed images only: hero WebP srcset, `og.jpg`, favicon, touch icon. |
 | `docs/` | Section specs and source masters. Not deployed. |
 | `tools/qa/` | Regression harness. Not deployed. See README. |

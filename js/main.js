@@ -222,11 +222,10 @@
     var heroEl = $('.hero'), portrait = $('.hero__portrait'), img = $('.hero__img');
     var name = $('.hero__name'), title = $('.hero__title'), cos = $('.hero__cos'), rule = $('.hero__rule');
     var nums = $$('.ledger__num'), labels = $$('.ledger__label');
-    var entered = window.__asvEnter || Promise.resolve(); /* the tap-to-enter screen (js/voice.js) */
-    var imgReady = Promise.all([(img.decode ? img.decode() : Promise.resolve()).catch(function () {}), entered]);
+    var imgReady = (img.decode ? img.decode() : Promise.resolve()).catch(function () {});
 
     if (RM) {
-      entered.then(function () { return Promise.race([Promise.all([imgReady, fontGate]), wait(900)]); }).then(function () {
+      Promise.race([Promise.all([imgReady, fontGate]), wait(900)]).then(function () {
         gsap.to([img, name, title, cos, rule].concat(nums, labels), { opacity: 1, duration: .4, ease: 'none' });
       });
       return;
@@ -240,8 +239,8 @@
         .fromTo(img, { scale: 1.03 }, { scale: 1, duration: 2.2, ease: 'expo.out' }, 0);
     });
 
-    var t0;
-    entered.then(function () { t0 = performance.now(); return fontGate; }).then(function () {
+    var t0 = performance.now();
+    fontGate.then(function () {
       var tl = gsap.timeline({ delay: Math.max(0, .35 - (performance.now() - t0) / 1000) });
       linesTo(tl, name, 0, { s: .1 });
       fadeTo(tl, [title, cos], .45, { y: 8, s: .08 });

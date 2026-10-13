@@ -12,12 +12,14 @@ css/styles.css          all styles; design tokens are the custom properties at t
 js/main.js              smooth scroll, reveals, hero intro, signature, timeline card, honours list, "Reach out" pill
 js/assistant.js         the offline assistant: matcher and chat panel
 js/assistant-kb.js      the assistant's knowledge: intents, answers, synonyms (loaded on demand)
+js/voice.js             tap-to-enter screen + voice-over (phones need a tap before sound), pause button
+audio/vo.mp3            the voice-over, 44s, 64 kbps mono (~350 KB)
 images/                 everything the page serves
   hero-640.webp, hero-1024.webp   portrait (srcset)
   og.jpg                          share image, 1200×630
   favicon.svg, apple-touch-icon.png
 docs/                   design and content specs per section, and source files (not deployed)
-  source-assets/                  portrait master, logo PNG, signature scan
+  source-assets/                  portrait master, logo PNG, signature scan, voice-over master
 tools/qa/               regression harness (dev only, not deployed)
 ```
 
@@ -35,7 +37,7 @@ Then open http://localhost:8000. An internet connection is needed for the fonts 
 
 ## Deploy
 
-Upload `index.html`, `css/`, `js/` and `images/` to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3 + CloudFront). Leave out `docs/`, `tools/` and `README.md`.
+Upload `index.html`, `css/`, `js/`, `images/` and `audio/` to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3 + CloudFront). Leave out `docs/`, `tools/` and `README.md`.
 
 Before going live, once the domain is known (see the `TODO(deploy)` comment in `<head>`):
 
@@ -50,6 +52,7 @@ Before going live, once the domain is known (see the `TODO(deploy)` comment in `
 - **Honours:** the button label ("32 honours, 2018–2025") must match the number of `.full__item` entries.
 - **Open questions for the client** are marked `<!-- FACT: … -->` in `index.html`.
 - **Portrait:** export the master (`docs/source-assets/hero-master.webp` or a new photo, 2:3) as 640px and 1024px WebP at about quality 82, keeping the file names. Regenerate `images/og.jpg` if the portrait changes.
+- **Voice-over:** the original is `docs/source-assets/vo-master.mp3`; the page serves `audio/vo.mp3`, re-encoded as 64 kbps mono (`ffmpeg -i master.mp3 -ac 1 -b:a 64k audio/vo.mp3`). Keep the name. Phones block sound until the visitor taps, so the page opens on a "Tap anywhere to enter" screen whose tap starts it; where autoplay is allowed the screen lifts by itself. The pause button hides itself when the voice-over ends.
 - **Colours, sizes and spacing** are tokens at the top of `css/styles.css`. Gold is never used as text on ivory; use `--gold-ink` there.
 
 ## Updating the assistant

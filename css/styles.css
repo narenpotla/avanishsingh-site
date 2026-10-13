@@ -86,6 +86,7 @@
   --z-scrim: 94;
   --z-panel: 95;
   --z-skip: 100;
+  --z-gate: 110;
 
   /* Motion */
   --expo: cubic-bezier(.16, 1, .3, 1);
@@ -170,7 +171,7 @@ h2.d-m { text-wrap: balance; }
 .navy .press:active { background-color: var(--ivory-04); }
 
 :focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
-.navy :focus-visible, .skip:focus-visible, .pill:focus-visible, .asv-fab:focus-visible, .asv-x:focus-visible { outline-color: var(--gold-light); }
+.navy :focus-visible, .skip:focus-visible, .pill:focus-visible, .vo:focus-visible, .asv-fab:focus-visible, .asv-x:focus-visible { outline-color: var(--gold-light); }
 [tabindex="-1"]:focus { outline: none; }
 
 .skip {
@@ -438,6 +439,47 @@ html:not(.js) .more[aria-expanded="true"] .more__x { transform: rotate(45deg); }
 .pill svg { width: 18px; height: 18px; color: var(--gold); flex: none; }
 
 /* ---------------------------------------------------------------------
+   GATE: tap-to-enter screen; the tap unlocks sound for the voice-over (js/voice.js)
+   --------------------------------------------------------------------- */
+.gate {
+  position: fixed; inset: 0; z-index: var(--z-gate);
+  display: none; flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+  width: 100%; padding: var(--g); background: var(--navy); color: var(--ivory);
+  transition: opacity .6s var(--expo), visibility 0s .6s;
+}
+.gated .gate { display: flex; }
+.gate.is-leaving { display: flex; opacity: 0; visibility: hidden; pointer-events: none; }
+.gate__mark { width: 96px; height: auto; fill: var(--gold); }
+.gate__name { color: var(--ivory); }
+.gate__cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; color: var(--gold); }
+.gate__cta svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.gate:focus-visible { outline: 2px solid var(--gold-light); outline-offset: -6px; }
+.gated body { overflow: hidden; }
+
+/* ---------------------------------------------------------------------
+   VOICE-OVER: pause/play, top right; a gold ring fills as it plays (js/voice.js)
+   --------------------------------------------------------------------- */
+.vo {
+  position: fixed; z-index: var(--z-fab);
+  right: calc(var(--page-inset) + var(--edge));
+  top: max(var(--edge), calc(env(safe-area-inset-top) + 8px));
+  display: grid; place-items: center; width: var(--tap); height: var(--tap); border-radius: 50%;
+  background: var(--deep-92); color: var(--gold);
+  opacity: 0; visibility: hidden;
+  transition: opacity var(--t-slide) var(--expo), visibility 0s var(--t-slide);
+}
+.vo.is-shown { opacity: 1; visibility: visible; transition: opacity var(--t-slide) var(--expo), visibility 0s; }
+.vo svg { grid-area: 1 / 1; }
+.vo__ring { width: 100%; height: 100%; transform: rotate(-90deg); fill: none; stroke: var(--gold); stroke-width: 1.5; }
+.vo__ring circle { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.vo::before { content: ""; grid-area: 1 / 1; width: 100%; height: 100%; border-radius: 50%; border: 1.5px solid var(--gold-22); box-sizing: border-box; }
+.vo__icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.vo__play { fill: currentColor; stroke-width: 1.2; }
+.vo .vo__pause, .vo.is-playing .vo__play { display: none; }
+.vo.is-playing .vo__pause { display: block; }
+.asv-open .vo { opacity: 0 !important; visibility: hidden !important; }
+
+/* ---------------------------------------------------------------------
    ASSISTANT: floating button + chat panel (js/assistant.js)
    --------------------------------------------------------------------- */
 .asv-fab {
@@ -515,5 +557,6 @@ html:not(.js) .more[aria-expanded="true"] .more__x { transform: rotate(45deg); }
   .asv-panel, .asv-open .asv-panel { transform: translate(-50%, 0); }
   .asv-fab { transform: none; }
   .modal__card { transform: none; }
+  .gate { transition: none; }
   .press:active, .asv-chip:active, .asv-act:active { scale: none; }
 }
